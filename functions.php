@@ -176,3 +176,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Registrar archivo assets.
+ */
+include get_template_directory() . '/assets/assets.php';
