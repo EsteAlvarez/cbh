@@ -47,6 +47,8 @@ get_header();
 				<h3>HAZTE SOCIO</h3>
 				<p>Únete a nuestra causa y hazte socio para ser parte activa en la protección de los animales necesitados. Juntos, podemos lograr un impacto duradero en sus vidas.</p>
 				<img class="img_enlaces" src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/pngwing-1.png'; ?>" alt="">
+			</a>
+
 			<a href="contacto" class="area_izquierda_inferior">
 				<h3>CONTÁCTANOS</h3>
 				<div>
@@ -58,18 +60,15 @@ get_header();
 		<!--Sección de cuadricula-->
 
 		<!--Ripley puntos-->
-		<section class="ripley_section my-5">
+		<section class="ripley-puntos my-5 p-5">
 			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
 				<a href="https://simple.ripley.cl">
-				<img src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/ripley-puntos-cbh-1.png'; ?>" alt="">
+					<img src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/ripley-puntos-cbh-1.png'; ?>" alt="">
 				</a>
 			</div>
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-				
 				<h4>Haz tus compras en Ripley utilizando el código de la fundación</h4>
-				<p>
-				Cuando realicen sus compras en las tiendas, simplemente proporcionen el <span class="fw-bold">código 415627268</span> para que acumulemos puntos, y lo más beneficioso es que no se descontarán de sus propios puntos
-				</p>
+				<p class="fondo-texto-ripley p-1">Cuando realicen sus compras en las tiendas, simplemente proporcionen el <span class="fw-bold">código 415627268</span> para que acumulemos puntos, y lo más beneficioso es que no se descontarán de sus propios puntos</p>
 			</div>
 		</section>
 		<!--Ripley puntos-->
