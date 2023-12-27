@@ -75,8 +75,15 @@ get_header();
 
 		<!--Redes sociales-->
 		<section class="container my-5">
-			<div class="row">
-				<div class="col-md-6 col-12 cards-rrss">
+			<!--Feed de Instagram-->
+			<div>
+
+			</div>
+			<!--Feed de Instagram-->
+
+			<!--Cards de Facebook y tiktok-->
+			<div class="row p-lg-5 p-md-3 p-1">
+				<div class="col-lg-6 col-md-12 col-12 cards-rrss mb-lg-0 mb-md-3 mb-3">
 					<a href="<?php echo the_field('url_de_facebook');?>">
 						<div class="card-facebook card-hover text-center p-4 h-100">
 							<p class="contenedor-icono-rrss mb-3">
@@ -88,7 +95,7 @@ get_header();
 						</div>	
 					</a>
 				</div>
-				<div class="col-md-6 col-12 cards-rrss">
+				<div class="col-lg-6 col-md-12 col-12 cards-rrss mb-lg-0 mb-md-3 mb-3">
 					<a href="<?php echo the_field('url_de_tiktok');?>">
 						<div class="card-tiktok card-hover text-center p-4 h-100">
 							<p class="contenedor-icono-rrss mb-3">
@@ -101,7 +108,9 @@ get_header();
 					</a>
 				</div>
 			</div>
+			<!--Cards de Facebook y tiktok-->
 		</section>
+		<!--Cards de Facebook y tiktok-->
 		<!--Redes sociales-->
 
 		<?php
