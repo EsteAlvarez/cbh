@@ -73,6 +73,37 @@ get_header();
 		</section>
 		<!--Ripley puntos-->
 
+		<!--Redes sociales-->
+		<section class="container my-5">
+			<div class="row">
+				<div class="col-md-6 col-12 cards-rrss">
+					<a href="<?php echo the_field('url_de_facebook');?>">
+						<div class="card-facebook card-hover text-center p-4 h-100">
+							<div class="container_svg_rrss">
+								<svg class="svg_rrss" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+							</div>
+							<p class="fw-bold">Usuario de Facebook</p>
+							<h5 class="titulo-card-rrss">Facebook</h5>
+							<p>Visítanos en Facebook y mantente al tanto de nuestras últimas noticias y eventos. ¡Síguenos para estar conectado con nuestra comunidad amante de los animales!</p>
+						</div>	
+					</a>
+				</div>
+				<div class="col-md-6 col-12 cards-rrss">
+					<a href="<?php echo the_field('url_de_tiktok');?>">
+						<div class="card-tiktok card-hover text-center p-4 h-100">
+							<div class="container_svg_rrss">
+								<svg class="svg_rrss" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+							</div>
+							<p class="fw-bold">Usuario de Tiktok</p>
+							<h5 class="titulo-card-rrss">Tiktok</h5>
+							<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales con nosotros.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!--Redes sociales-->
+
 		<?php
 		while ( have_posts() ) :
 			the_post();

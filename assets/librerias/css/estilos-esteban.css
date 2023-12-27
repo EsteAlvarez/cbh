@@ -12,6 +12,8 @@
     --color-texto-cuadriculas: #2D2E6F;
     --color-banner-ripley: #C9C1E6;
     --color-blanco: #fff;
+    --color-card-facebook: #F1D1FF;
+    --color-card-tiktok: #FFE5B8;
 }
 
 /*Fuentes*/
@@ -200,6 +202,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*Banner Ripley*/
 
+/*Cards Facebook y tiktok*/
+.cards-rrss a {
+    text-decoration: none;
+    color: var(--color-texto-cuadriculas);
+}
+.cards-rrss a .card-hover {
+    transition: color ease-in-out 0.3s, box-shadow ease-in-out 0.4s;
+}
+.cards-rrss a:hover {
+    color: var(--color-texto-cuadriculas);
+}
+.cards-rrss a:visited {
+    color: var(--color-texto-cuadriculas);
+}
+.cards-rrss a:hover .card-hover {
+    color: #5d5fdb !important;
+    box-shadow: 0 0 4px 4px  #C9C1E6;
+}
+.titulo-card-rrss {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.card-facebook {
+    background-color:rgba(241, 209, 255, .7);
+    border: 10px solid var(--color-card-facebook);
+}
+.card-tiktok {
+    background-color:rgba(255, 229, 184, .7);
+    border: 10px solid var(--color-card-tiktok);
+}
+/*Cards Facebook y tiktok*/
 
 
 
