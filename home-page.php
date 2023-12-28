@@ -56,7 +56,7 @@ get_header();
 		<!--Sección de cuadricula-->
 
 		<!--Ripley puntos-->
-		<section class="ripley-puntos container-fluid my-5 p-3">
+		<section class="ripley-puntos container-fluid my-5 p-2">
 			<div class="row m-0 p-0">
 				<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
 					<a href="<?php the_field('link_ripley');?>" target="_blank">
