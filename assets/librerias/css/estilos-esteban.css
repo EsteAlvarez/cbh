@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .imagen-ripley:hover {
     width: 300px;
-    box-shadow: 0 0 4px 4px var(--color-banner-ripley);
+    box-shadow: 0 0 4px 4px #C9C1E6;
 }
 /*Banner Ripley*/
 
