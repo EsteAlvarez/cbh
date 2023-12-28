@@ -34,7 +34,7 @@ get_header();
 			</a>
 
 			<a href="adoptanos" class="area_derecha">
-				<h2 class="fs-3"><?php the_field('adopta');?></h2>
+				<h2 class="h3"><?php the_field('adopta');?></h2>
 				<div>
 					<p><?php the_field('texto_adopta');?></p>
 				</div>
