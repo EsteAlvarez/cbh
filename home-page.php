@@ -115,13 +115,13 @@ get_header();
 		<!--Redes sociales-->
 
 		<!--Vitalcan-->
-		<section class="container-fluid my-5 m-0 p-0">
+		<section class="container-fluid banner-vitalcan my-5 m-0 p-0">
 			<div class="container">
 				<a href="<?php the_field('link_vitalcan');?>">
 					<?php 
 					$image = get_field('imagen_vitalcan');
 						if( !empty( $image ) ): ?>
-							<img class="img-fluid imagen-vitalcan" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+							<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 				</a>
 			</div>
