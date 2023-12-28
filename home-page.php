@@ -24,12 +24,12 @@ get_header();
 		<section class="container_grid my-5">
 
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_centro">
-				<h2 class="fs-3"><?php the_field('donacion');?></h2>
+				<h2 class="h3"><?php the_field('donacion');?></h2>
 				<p><?php the_field('texto_donacion');?></p>
 			</a>
 
 			<a href="proximos-eventos" class="area_izquierda">
-				<h2 class="fs-3"><?php the_field('eventos');?></h2>
+				<h2 class="h3"><?php the_field('eventos');?></h2>
 				<p><?php the_field('texto_eventos');?></p>
 			</a>
 
@@ -41,12 +41,12 @@ get_header();
 			</a>
 
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_derecha_inferior">
-				<h2 class="fs-3"><?php the_field('socio');?></h2>
+				<h2 class="h3"><?php the_field('socio');?></h2>
 				<p><?php the_field('texto_socio');?></p>
 			</a>
 
 			<a href="contacto" class="area_izquierda_inferior">
-				<h2 class="fs-3"><?php the_field('contacto');?></h2>
+				<h2 class="h3"><?php the_field('contacto');?></h2>
 				<div>	
 					<p><?php the_field('texto_contacto');?></p>
 				</div>
