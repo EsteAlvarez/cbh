@@ -62,7 +62,7 @@ get_header();
 						<?php 
 						$image = get_field('imagen_ripley_puntos');
 						if( !empty( $image ) ): ?>
-							<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+							<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 						<?php endif; ?>
 					</a>
 				</div>
