@@ -23,37 +23,32 @@ get_header();
 		<!--Sección de cuadricula-->
 		<section class="container_grid my-5">
 
-			<a href="https://esponsor.com/callejerosbuscanhogar?fbclid=IwAR2eN9qOX95zuOZ7PVTKR9f9L86VySsm6CQv0Zheb_sp8e5TLPVuDzhE7G0" target="_blank" class="area_centro">
-				<h3>HAZ UNA DONACIÓN</h3>
-				<p>Donar para marcar la diferencia en las vidas de animales necesitados y apoyar nuestra causa.</p>
-				
+			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_centro">
+				<h3><?php the_field('donacion');?></h3>
+				<p><?php the_field('texto_donacion');?></p>
 			</a>
 
 			<a href="proximos-eventos" class="area_izquierda">
-				<h3>PRÓXIMOS EVENTOS</h3>
-				<p>Descubre nuestros próximos eventos: jornadas de adopción, charlas y esterilizaciones masivas.</p>
-				
+				<h3><?php the_field('eventos');?></h3>
+				<p><?php the_field('texto_eventos');?></p>
 			</a>
 
 			<a href="adoptanos" class="area_derecha">
-				<h3>ADOPTA UN PELUDITO</h3>
+				<h3><?php the_field('adopta');?></h3>
 				<div>
-				
-				<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
+					<p><?php the_field('texto_adopta');?></p>
 				</div>
 			</a>
 
-			<a href="https://esponsor.com/callejerosbuscanhogar?fbclid=IwAR2eN9qOX95zuOZ7PVTKR9f9L86VySsm6CQv0Zheb_sp8e5TLPVuDzhE7G0" target="_blank" class="area_derecha_inferior">
-				<h3>HAZTE SOCIO</h3>
-				<p>Únete a nuestra causa y hazte socio para ser parte activa en la protección de los animales necesitados. Juntos, podemos lograr un impacto duradero en sus vidas.</p>
-				
+			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_derecha_inferior">
+				<h3><?php the_field('socio');?></h3>
+				<p><?php the_field('texto_socio');?></p>
 			</a>
 
 			<a href="contacto" class="area_izquierda_inferior">
-				<h3>CONTÁCTANOS</h3>
-				<div>
-					
-					<p>Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos</p>
+				<h3><?php the_field('contacto');?></h3>
+				<div>	
+					<p><?php the_field('texto_contacto');?></p>
 				</div>
 			</a>
 		</section>

@@ -209,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cards-rrss a .card-hover {
     transition: color ease-in-out 0.3s, box-shadow ease-in-out 0.4s;
+    border-radius: 3px;
 }
 .cards-rrss a:hover {
     color: var(--color-texto-cuadriculas);
