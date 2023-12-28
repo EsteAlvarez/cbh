@@ -16,9 +16,10 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<!--Carrusel adóptanos-->
 		<section class="carousel mb-5">
-
 		</section>
+		<!--Carrusel adóptanos-->
 
 		<!--Sección de cuadricula-->
 		<section class="container_grid my-5">
@@ -111,8 +112,19 @@ get_header();
 			</div>
 			<!--Cards de Facebook y tiktok-->
 		</section>
-		<!--Cards de Facebook y tiktok-->
 		<!--Redes sociales-->
+
+		<!--Vitalcan-->
+		<section class="container-fluid">
+			<a href="<?php the_field('link_vitalcan');?>">
+				<?php 
+				$image = get_field('imagen_vitalcan');
+					if( !empty( $image ) ): ?>
+						<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
+			</a>
+		</section>
+		<!--Vitalcan-->
 
 		<?php
 		while ( have_posts() ) :
