@@ -57,13 +57,17 @@ get_header();
 		<!--Ripley puntos-->
 		<section class="ripley-puntos my-5 p-5">
 			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-				<a href="https://simple.ripley.cl">
-				
+				<a href="<?php the_field('link_ripley');?>">
+					<?php 
+					$image = get_field('imagen_ripley_puntos');
+					if( !empty( $image ) ): ?>
+						<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 				</a>
 			</div>
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-				<h4>Haz tus compras en Ripley utilizando el código de la fundación</h4>
-				<p class="fondo-texto-ripley p-1">Cuando realicen sus compras en las tiendas, simplemente proporcionen el <span class="fw-bold">código 415627268</span> para que acumulemos puntos, y lo más beneficioso es que no se descontarán de sus propios puntos</p>
+				<h2 class="h4"><?php the_field('titulo_banner_ripley');?></h2>
+				<p class="fondo-texto-ripley p-1"><?php the_field('texto_banner_ripley');?></p>
 			</div>
 		</section>
 		<!--Ripley puntos-->
