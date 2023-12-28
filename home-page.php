@@ -97,7 +97,7 @@ get_header();
 						</div>	
 					</a>
 				</div>
-				<div class="col-lg-6 col-md-12 col-12 cards-rrss mb-lg-0 mb-md-3 mb-3">
+				<div class="col-lg-6 col-md-12 col-12 cards-rrss">
 					<a href="">
 						<div class="card-tiktok card-hover text-center p-4 h-100">
 							<p class="contenedor-icono-rrss mb-3">
@@ -115,7 +115,7 @@ get_header();
 		<!--Redes sociales-->
 
 		<!--Vitalcan-->
-		<section class="container-fluid">
+		<section class="container-fluid my-5 m-0 p-0">
 			<a href="<?php the_field('link_vitalcan');?>">
 				<?php 
 				$image = get_field('imagen_vitalcan');
