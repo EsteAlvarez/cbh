@@ -180,3 +180,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Registrar archivo assets.
  */
 include get_template_directory() . '/assets/assets.php';
+

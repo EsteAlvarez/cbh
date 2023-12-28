@@ -6,7 +6,7 @@ function css_fcbh(){
     wp_register_style('fuentes', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Rubik:wght@300;400&display=swap', 'all');
     wp_register_style('estilos-esteban', get_template_directory_uri() . '/assets/librerias/css/estilos-esteban.css', 'all');
     wp_register_style('estilos-sebastian', get_template_directory_uri() . '/assets/librerias/css/estilos-sebastian.css', 'all');
-    
+        
     
     
     //Encolar estilos
