@@ -58,7 +58,7 @@ get_header();
 		<section class="ripley-puntos container-fluid my-5 p-3">
 			<div class="row m-0 p-0">
 				<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-					<a href="<?php the_field('link_ripley');?>">
+					<a href="<?php the_field('link_ripley');?>" target="_blank">
 						<?php 
 						$image = get_field('imagen_ripley_puntos');
 						if( !empty( $image ) ): ?>
