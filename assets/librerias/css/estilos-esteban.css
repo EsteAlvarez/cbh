@@ -70,10 +70,11 @@ h1, h2, h3, h4, h5, h6 {
 .area_centro img.img_enlaces{
     width: 90px;
 }
-.area_centro h3{
+.area_centro, .area_izquierda, .area_derecha, .area_derecha_inferior, h2{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .area_centro p{
     font-size: 15px;
@@ -95,11 +96,12 @@ h1, h2, h3, h4, h5, h6 {
 .area_izquierda img.img_enlaces{
     width: 240px;
 }
-.area_izquierda h3{
+ /* h2{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-}
+    text-transform: uppercase;
+} */
 .area_izquierda p{
     font-size: 15px;
     text-align: center;
@@ -120,11 +122,12 @@ h1, h2, h3, h4, h5, h6 {
 .area_derecha img.img_enlaces{
     width: 190px;
 }
-.area_derecha h3{
+ /* h2{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-}
+    text-transform: uppercase;
+} */
 .area_derecha p{
     font-size: 15px;
     text-align: center;
@@ -150,11 +153,12 @@ h1, h2, h3, h4, h5, h6 {
 .area_derecha_inferior img.img_enlaces{
     width: 160px;
 }
-.area_derecha_inferior h3{
+ /* h2{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-}
+    text-transform: uppercase;
+} */
 .area_derecha_inferior p{
     font-size: 15px;
     text-align: center;
@@ -175,11 +179,12 @@ h1, h2, h3, h4, h5, h6 {
 .area_izquierda_inferior img.img_enlaces{
     width: 150px;
 }
-.area_izquierda_inferior h3{
+.area_izquierda_inferior h2{
     font-size: 25px;
     width: 100% !important;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .area_izquierda_inferior p{
     font-size: 15px;

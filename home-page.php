@@ -24,29 +24,29 @@ get_header();
 		<section class="container_grid my-5">
 
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_centro">
-				<h3><?php the_field('donacion');?></h3>
+				<h2 class="fs-3"><?php the_field('donacion');?></h2>
 				<p><?php the_field('texto_donacion');?></p>
 			</a>
 
 			<a href="proximos-eventos" class="area_izquierda">
-				<h3><?php the_field('eventos');?></h3>
+				<h2 class="fs-3"><?php the_field('eventos');?></h2>
 				<p><?php the_field('texto_eventos');?></p>
 			</a>
 
 			<a href="adoptanos" class="area_derecha">
-				<h3><?php the_field('adopta');?></h3>
+				<h2 class="fs-3"><?php the_field('adopta');?></h2>
 				<div>
 					<p><?php the_field('texto_adopta');?></p>
 				</div>
 			</a>
 
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_derecha_inferior">
-				<h3><?php the_field('socio');?></h3>
+				<h2 class="fs-3"><?php the_field('socio');?></h2>
 				<p><?php the_field('texto_socio');?></p>
 			</a>
 
 			<a href="contacto" class="area_izquierda_inferior">
-				<h3><?php the_field('contacto');?></h3>
+				<h2 class="fs-3"><?php the_field('contacto');?></h2>
 				<div>	
 					<p><?php the_field('texto_contacto');?></p>
 				</div>
