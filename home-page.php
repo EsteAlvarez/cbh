@@ -55,19 +55,21 @@ get_header();
 		<!--Sección de cuadricula-->
 
 		<!--Ripley puntos-->
-		<section class="ripley-puntos my-5 p-5">
-			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-				<a href="<?php the_field('link_ripley');?>">
-					<?php 
-					$image = get_field('imagen_ripley_puntos');
-					if( !empty( $image ) ): ?>
-						<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-					<?php endif; ?>
-				</a>
-			</div>
-			<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-				<h2 class="h4"><?php the_field('titulo_banner_ripley');?></h2>
-				<p class="fondo-texto-ripley p-1"><?php the_field('texto_banner_ripley');?></p>
+		<section class="ripley-puntos container-fluid my-5 p-5">
+			<div class="row m-0 p-0">
+				<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+					<a href="<?php the_field('link_ripley');?>">
+						<?php 
+						$image = get_field('imagen_ripley_puntos');
+						if( !empty( $image ) ): ?>
+							<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+					</a>
+				</div>
+				<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+					<h2 class="h4"><?php the_field('titulo_banner_ripley');?></h2>
+					<p class="fondo-texto-ripley p-1"><?php the_field('texto_banner_ripley');?></p>
+				</div>
 			</div>
 		</section>
 		<!--Ripley puntos-->
