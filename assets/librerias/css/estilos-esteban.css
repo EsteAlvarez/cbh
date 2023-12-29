@@ -623,3 +623,12 @@ h1, h2, h3, h4, h5, h6 {
         height: 100%;
       }
 }
+
+
+/*Adóptanos*/
+/*Banner nuestra causa*/
+.banner-causa {
+    background-color: var(--color-banner-ripley);
+}
+/*Banner nuestra causa*/
+/*Adóptanos*/
