@@ -631,4 +631,31 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-banner-ripley);
 }
 /*Banner nuestra causa*/
+
+.migas ol li {
+    color: var(--color-texto-cuadriculas) !important;
+}
+.link-migas {
+    transition: .5s;
+}
+.link-migas:visited {
+    color: var(--color-texto-cuadriculas);
+}
+.link-migas:hover {
+    color: black;
+}
+
+.boton-filtro-mascotas {
+    width: 200px;
+    border-radius: 25px;
+    color: var(--color-blanco);
+    font-weight: bold;
+    background-color: var(--color-texto-cuadriculas);
+    transition: .5s;
+}
+.boton-filtro-mascotas:hover {
+    background-color: black;
+}
+
+
 /*Adóptanos*/

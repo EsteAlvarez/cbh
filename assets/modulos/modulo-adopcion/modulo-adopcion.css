@@ -1,0 +1,45 @@
+.imagen-mascota img {
+    border-radius: 3px;
+}
+.card {
+    background-color: #C9C1E6;
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+.card-body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.card:hover .card-body {
+    opacity: 1;
+}
+.boton-adoptame-cachorros {
+    border: 1px solid #2D2E6F;
+    background-color: #2D2E6F;
+    color: white;
+    font-weight: bold;
+    padding: .4em;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: .5s;
+}
+.boton-adoptame-cachorros:visited {
+    border: 1px solid #2D2E6F;
+    background-color: #2D2E6F;
+    color: white;
+}
+.boton-adoptame-cachorros:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: #2D2E6F;
+}

@@ -4,8 +4,8 @@ function adopcion_register() {
 
     $labels = array(
         'name' => _x('Adopcion', 'post type general name'),
-        'singular_name' => _x('canciones', 'post type singular name'),
-        'add_new' => _x('Agregar adopcion', 'slideshow_two item'),
+        'singular_name' => _x('Adopcion', 'post type singular name'),
+        'add_new' => _x('Agregar Callejero', 'slideshow_two item'),
         'add_new_item' => __('Agregar adopcion'),
         'edit_item' => __('Editar adopcion'),
         'new_item' => __('Nuevo adopcion'),
@@ -28,7 +28,7 @@ function adopcion_register() {
         'menu_icon'  => 'dashicons-heart',
         'hierarchical' => false,
         'menu_position' => null,
-        'supports'=> array( 'title','thumbnail', 'excerpt', 'editor'), //Modificar tipo de contenido de post
+        'supports'=> array( 'title','thumbnail'), //Modificar tipo de contenido de post
         'rewrite' => array('slug' => 'adopcion', 'with_front' => false)
     ); 
 
@@ -36,7 +36,7 @@ function adopcion_register() {
 }
     add_action('init', 'adopcion_register');
 
-    /*categorías personalizadas, taxonomía de categoría separada para que no se funcione con categorías
+    /*categorías personalizadas, taxonomía de categoría separada para que no se fucione con categorías
     de post*/
     function categoria_adopcion() {
 
@@ -44,7 +44,7 @@ function adopcion_register() {
             'categoria-adopcion',
             'adopcion',
             array(
-                'label' => __( 'Categoria' ),
+                'label' => __( 'Categorias' ),
                 'rewrite' => array( 'slug' => 'categoria-adopcion' ),
                 'hierarchical' => true, //Herencia categorías y sub categorías
                 // Allow automatic creation of taxonomy columns on associated post-types table?

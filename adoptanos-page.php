@@ -41,9 +41,9 @@ get_header();
 
 		<!--Migas de pan-->
 		<div class="container my-5">
-			<nav aria-label="breadcrumb">
+			<nav aria-label="breadcrumb" class="migas">
 			<ol class="breadcrumb m-0 p-0">
-				<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+				<li class="breadcrumb-item"><a class="text-decoration-none link-migas" href="<?php echo home_url();?>">Inicio</a></li>
 				<li class="breadcrumb-item active fw-bold" aria-current="page"><?php echo get_the_title();?></li>
 			</ol>
 			</nav>
@@ -51,47 +51,18 @@ get_header();
 		<!--Migas de pan-->
 
 		<!--Filtros-->
-		<div class="container d-flex justify-content-around">
-			<button>Cachorros</button>
-			<button>Perros</button>
-			<button>Gatos</button>
+		<div class="container d-flex flex-lg-row flex-column justify-content-lg-around justify-content-center align-items-center">
+			<button id="cachorros" class="boton-filtro-mascotas mb-lg-0 mb-3"><i class="fa-solid fa-dog fs-6"></i> Cachorros</button>
+			<button id="perros" class="boton-filtro-mascotas mb-lg-0 mb-3"><i class="fa-solid fa-dog fs-5"></i> Perros</button>
+			<button id="gatos" class="boton-filtro-mascotas"><i class="fa-solid fa-cat fs-5"></i> Gatos</button>
 		</div>
 		<!--Filtros-->
 
 		<!--Cards mascotas-->
 		<section class="container my-5">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="card mx-auto" style="width: 18rem;">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mx-auto" style="width: 18rem;">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mx-auto" style="width: 18rem;">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-					</div>
-				</div>
-			</div>
+			<?php include get_template_directory() . '/assets/modulos/modulo-adopcion/loop-cachorros.php';?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-adopcion/loop-perros.php';?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-adopcion/loop-gatos.php';?>
 		</section>
 		<!--Cards mascotas-->
 
