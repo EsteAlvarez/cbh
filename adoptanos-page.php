@@ -20,8 +20,8 @@ get_header();
 		<section class="container-fluid banner-causa">
 			<?php
 			function contar_entradas() {
-				$count_custom_posts = wp_count_posts('adopcion')->publish;
-				return $count_custom_posts;;
+				$contar_custom_posts = wp_count_posts('adopcion')->publish;
+				return $contar_custom_posts;;
 			}
 			?>
 			<article class="container p-4">

@@ -652,7 +652,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .boton-filtro-mascotas {
     width: 200px;
-    border-radius: 25px;
+    border-radius: 3px;
     color: var(--color-blanco);
     font-weight: bold;
     background-color: var(--color-texto-cuadriculas);

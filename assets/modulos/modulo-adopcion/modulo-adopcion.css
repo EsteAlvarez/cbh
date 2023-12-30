@@ -23,9 +23,9 @@
     opacity: 1;
 }
 .boton-adoptame-cachorros {
-    border: 1px solid #2D2E6F;
-    background-color: #2D2E6F;
-    color: white;
+    border: 1px solid white;
+    background-color: white;
+    color: #2D2E6F;
     font-weight: bold;
     padding: .4em;
     text-decoration: none;
@@ -33,12 +33,12 @@
     transition: .5s;
 }
 .boton-adoptame-cachorros:visited {
-    border: 1px solid #2D2E6F;
-    background-color: #2D2E6F;
-    color: white;
-}
-.boton-adoptame-cachorros:hover {
     border: 1px solid white;
     background-color: white;
     color: #2D2E6F;
+}
+.boton-adoptame-cachorros:hover {
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
 }
