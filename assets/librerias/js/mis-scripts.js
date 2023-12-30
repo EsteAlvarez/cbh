@@ -7,17 +7,17 @@ var contenedorCachorros = $('#contenedor_cachorros'), contenedorPerros = $('#con
 btnCachorros.click(function(){
     contenedorPerros.hide();
     contenedorGatos.hide();
-    contenedorCachorros.fadeIn();
+    contenedorCachorros.fadeIn(500);
 });
 btnPerros.click(function(){
     contenedorCachorros.hide();
     contenedorGatos.hide();
-    contenedorPerros.fadeIn();
+    contenedorPerros.fadeIn(500);
 });
 btnGatos.click(function(){
     contenedorCachorros.hide();
     contenedorPerros.hide();
-    contenedorGatos.fadeIn();
+    contenedorGatos.fadeIn(500);
 });
 /*Botones para alternar entre categorías*/
 
