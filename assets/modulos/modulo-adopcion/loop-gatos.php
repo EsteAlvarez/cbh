@@ -12,7 +12,7 @@ hoja_estilos_adopcion();
 
 
 <!--Sección 1-->
-<div class="row" id="contenedor_gatos">
+<div class="row" id="contenedor_gatos" style="display:none;">
     <!--Custom Loop-->
     <?php $active = true;
             $temp = $wp_query;
