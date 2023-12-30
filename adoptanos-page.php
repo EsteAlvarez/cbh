@@ -69,10 +69,49 @@ get_header();
 		<!--Antes y después-->
 		<section class="container my-5">
 			<div class="row text-center">
-				<h2>Antes y después</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, explicabo ipsum. Ad accusamus itaque incidunt, perspiciatis eligendi cum dolore esse! Nihil minus, soluta blanditiis nemo deserunt veniam magni dolores eveniet numquam odio repudiandae! Minus, consequuntur magnam earum nemo deleniti repudiandae.</p>
+				<h2><?php the_field('titulo_de_seccion');?></h2>
+				<p><?php the_field('descripcion_de_la_seccion');?></p>
 			</div>
 			<!--Carrusel de casos de exito-->
+			<div id="carrusel_exitos" class="my-5">
+
+				<figure>
+					<?php 
+						$image = get_field('foto_1');
+						if( !empty( $image ) ): ?>
+							<img class="img-ayd" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+				</figure>
+				<figure>
+					<?php 
+						$image = get_field('foto_2');
+						if( !empty( $image ) ): ?>
+							<img class="img-ayd" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+				</figure>
+				<figure>
+					<?php 
+						$image = get_field('foto_3');
+						if( !empty( $image ) ): ?>
+							<img class="img-ayd" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+				</figure>
+				<figure>
+					<?php 
+						$image = get_field('foto_4');
+						if( !empty( $image ) ): ?>
+							<img class="img-ayd" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+				</figure>
+				<figure>
+					<?php 
+						$image = get_field('foto_5');
+						if( !empty( $image ) ): ?>
+							<img class="img-ayd" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+				</figure>
+				
+			</div>
 			<!--Carrusel de casos de exito-->
 		</section>
 		<!--Antes y después-->
