@@ -18,20 +18,22 @@ get_header();
 	<main id="primary" class="site-main">
 		<!--Contador de adopciones-->
 		<section class="container-fluid banner-causa">
+			<?php
+			function contar_entradas() {
+				$count_custom_posts = wp_count_posts('adopcion')->publish;
+				return $count_custom_posts;;
+			}
+			?>
 			<article class="container p-4">
 				<div class="row">
-					<div class="col-6">
-						<h1>Nuestra Causa</h1>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti qui pariatur adipisci ex et doloremque quaerat iusto eaque quidem assumenda.</p>
+					<div class="col-lg-6 col-md-12 col-12 mb-lg-0 mb-md-3 mb-3">
+						<h1><?php the_field('titulo_nuestra_causa');?></h1>
+						<p><?php the_field('descripcion_nuestra_causa');?></p>
 					</div>
-					<div class="col-6 d-flex justify-content-around">
-						<div class="d-flex flex-column text-center border p-2">
-							<span class="fs-1">80</span>
-							<p>Animales rescatados</p>
-						</div>
-						<div class="d-flex flex-column text-center border p-2">
-							<span class="fs-1">50</span>
-							<p>Animales en adopcion</p>
+					<div class="col-lg-6 col-md-12 col-12">
+						<div class="d-flex flex-column text-center contenedor-contador p-2">
+							<span class="fs-1"><?php echo contar_entradas();?></span>
+							<p><?php the_field('texto_contador_de_adopcion');?></p>
 						</div>
 					</div>
 				</div>

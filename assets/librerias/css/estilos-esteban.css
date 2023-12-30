@@ -12,6 +12,7 @@
     --color-texto-cuadriculas: #2D2E6F;
     --color-banner-ripley: #C9C1E6;
     --color-blanco: #fff;
+    --color-negro: #000;
     --color-card-facebook: #F1D1FF;
     --color-card-tiktok: #FFE5B8;
 }
@@ -629,6 +630,10 @@ h1, h2, h3, h4, h5, h6 {
 /*Banner nuestra causa*/
 .banner-causa {
     background-color: var(--color-banner-ripley);
+}
+.contenedor-contador {
+    border: 10px solid var(--color-blanco);
+    border-radius: 3px;
 }
 /*Banner nuestra causa*/
 
