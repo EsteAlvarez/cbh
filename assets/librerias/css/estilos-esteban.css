@@ -21,11 +21,12 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
 }
 p {
     font-family: 'Rubik', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, legend {
     font-family: 'Poppins', sans-serif;
 }
 /*Fuentes*/
@@ -636,7 +637,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
 }
 /*Banner nuestra causa*/
-
 .migas ol li {
     color: var(--color-texto-cuadriculas) !important;
 }
@@ -649,7 +649,6 @@ h1, h2, h3, h4, h5, h6 {
 .link-migas:hover {
     color: black;
 }
-
 .boton-filtro-mascotas {
     width: 200px;
     border-radius: 3px;
@@ -661,8 +660,48 @@ h1, h2, h3, h4, h5, h6 {
 .boton-filtro-mascotas:hover {
     background-color: black;
 }
-
 .img-ayd {
     width: 250px;
 }
 /*Adóptanos*/
+
+/*Ficha de mascota*/
+.ficha-adopcion {
+    border: 10px solid var(--color-texto-cuadriculas);
+    border-radius: 3px;
+}
+.contenedor-imagen-ficha {
+   background-color: var(--color-banner-ripley);
+}
+.contenedor-imagen-ficha img {
+    width: 400px;
+    height: auto;
+}
+.contenedor-datos-mascota {
+    background-color: var(--color-banner-ripley);
+}
+.boton-adoptame-ficha {
+    background-color: var(--color-texto-cuadriculas);
+    color: var(--color-blanco);
+    border-radius: 3px;
+    padding: .5em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+.boton-adoptame-ficha:visited {
+    background-color: var(--color-texto-cuadriculas);
+    color: var(--color-blanco);
+}
+.boton-adoptame-ficha:hover {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+form {
+    font-family: 'Rubik', sans-serif;
+}
+fieldset {
+    border: 1px solid var(--color-texto-cuadriculas);
+    border-radius: 3px;
+}
+/*Ficha de mascota*/

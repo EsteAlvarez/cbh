@@ -21,6 +21,15 @@ btnGatos.click(function(){
 });
 /*Botones para alternar entre categorías*/
 
+/*Boton para desplegar formulario de adopción*/
+var btnFichaForm = $('#boton_adoptame_ficha');
+var contenedorForm = $('#contenedor_formulario');
+
+btnFichaForm.click(function(){
+  contenedorForm.fadeIn(500);
+})
+/*Boton para desplegar formulario de adopción*/
+
 $('#carrusel_exitos').slick({
     centerMode: true,
     centerPadding: '60px',
