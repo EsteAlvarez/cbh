@@ -68,7 +68,7 @@ get_header();
 					</a>
 				</div>
 				<div class="col-12 col-md-7 p-md-5 p-2 d-flex flex-column justify-content-center align-items-center text-center">
-					<h2 class="h4 mb-md-4 mb-1"><?php the_field('titulo_banner_ripley');?></h2>
+					<h2 class="h3 mb-md-4 mb-1"><?php the_field('titulo_banner_ripley');?></h2>
 					<p class="fondo-texto-ripley p-2"><?php the_field('texto_banner_ripley');?></p>
 				</div>
 			</div>
