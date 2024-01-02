@@ -84,7 +84,7 @@ get_header();
 			<!--Feed de Instagram-->
 
 			<!--Cards de Facebook y tiktok-->
-			<div class="row p-lg-5 p-md-3 p-1">
+			<div class="row px-lg-5 px-md-3 px-1">
 				<div class="col-lg-6 col-md-12 col-12 cards-rrss mb-lg-0 mb-md-3 mb-3">
 					<a href="">
 						<div class="card-facebook card-hover text-center p-4 h-100">
