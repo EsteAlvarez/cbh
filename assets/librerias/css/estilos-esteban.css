@@ -26,7 +26,7 @@ body {
 p {
     font-family: 'Rubik', sans-serif;
 }
-h1, h2, h3, h4, h5, h6, legend {
+h1, h2, h3, h4, h5, h6, legend, label {
     font-family: 'Poppins', sans-serif;
 }
 /*Fuentes*/
@@ -642,6 +642,7 @@ h1, h2, h3, h4, h5, h6, legend {
 }
 .link-migas {
     transition: .5s;
+    color: var(--color-texto-cuadriculas);
 }
 .link-migas:visited {
     color: var(--color-texto-cuadriculas);
@@ -710,9 +711,6 @@ form {
 }
 /*Ficha de mascota*/
 
-label > input {
-    border-color: var(--color-texto-cuadriculas);
-}
 label {
-    font-weight: bold;
+    font-weight: 600;
 }
