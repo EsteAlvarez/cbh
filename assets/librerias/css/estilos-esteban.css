@@ -704,4 +704,8 @@ fieldset {
     border: 1px solid var(--color-texto-cuadriculas);
     border-radius: 3px;
 }
+.foto-ficha {
+    width: 400px;
+    height: auto;
+}
 /*Ficha de mascota*/
