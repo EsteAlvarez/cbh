@@ -57,8 +57,8 @@ get_header();
 
 		<!--Ripley puntos-->
 		<section class="ripley-puntos container-fluid my-5 p-2">
-			<div class="row m-0 p-0">
-				<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+			<div class="row m-0 p-2">
+				<div class="col-6 mx-auto col-md-5 d-flex justify-content-center align-items-center">
 					<a href="<?php the_field('link_ripley');?>" target="_blank">
 						<?php 
 						$image = get_field('imagen_ripley_puntos');
@@ -67,9 +67,9 @@ get_header();
 						<?php endif; ?>
 					</a>
 				</div>
-				<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-					<h2 class="h4"><?php the_field('titulo_banner_ripley');?></h2>
-					<p class="fondo-texto-ripley p-1"><?php the_field('texto_banner_ripley');?></p>
+				<div class="col-12 col-md-7 p-md-5 p-2 d-flex flex-column justify-content-center align-items-center text-center">
+					<h2 class="h4 mb-md-4 mb-1"><?php the_field('titulo_banner_ripley');?></h2>
+					<p class="fondo-texto-ripley p-2"><?php the_field('texto_banner_ripley');?></p>
 				</div>
 			</div>
 		</section>
