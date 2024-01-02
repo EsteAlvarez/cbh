@@ -28,8 +28,8 @@ get_header();
 		<!--Migas de pan-->
 
 		<!--Formulario de contacto-->
-		<section class="row my-5">
-			<div class="col-lg-6">
+		<section class="row my-md-5 my-3 p-md-0 p-3">
+			<div class="col-lg-6 mb-lg-0 mb-md-3 mb-3">
 				<h1><?php echo get_the_title();?></h1>
 				<p><?php the_content();?></p>
 			</div>
