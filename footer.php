@@ -11,22 +11,20 @@
 
 ?>
 
-	<footer class="container-fluid py-3">
+	<footer class="container-fluid py-2">
 		<div class="row text-center">
 			<div class="col-12">
 				<span class="logo-footer zoom"><?php the_custom_logo(); ?></span>
 			</div>
-			<div class="col-12">
-				<a href="https://web.facebook.com/CallejerosBuscanHogar/?locale=es_LA&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook fs-1"></i></a>
-				<a href="https://www.instagram.com/fundacioncbh/" target="_blank"><i class="bi bi-instagram fs-1 px-5"></i></a>
-				<a href="https://www.tiktok.com/@fundacioncbh" target="_blank"><i class="bi bi-tiktok fs-1"></i></a>
+			<div class="col-12 py-2">
+				<a href="https://web.facebook.com/CallejerosBuscanHogar/?locale=es_LA&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook fs-2"></i></a>
+				<a href="https://www.instagram.com/fundacioncbh/" target="_blank"><i class="bi bi-instagram fs-2 px-5"></i></a>
+				<a href="https://www.tiktok.com/@fundacioncbh" target="_blank"><i class="bi bi-tiktok fs-2"></i></a>
 			</div>
 			<div class="col-12 my-3 correo">
-				<p><i class="fa-regular fa-envelope me-2"></i>contacto@fundacioncbh.cl</p>
+				<p><i class="fa-regular fa-envelope"></i>contacto@fundacioncbh.cl</p>
 				<a class="fw-semibold" href="http://fundacioncbh.cl/admin/login.php" target="_blank">Registro</a>
-			</div>
-			<div class="col-12">
-				<p>Obtén información sobre la Ley de Tenencia Responsable de Mascotas y Animales de Compañía haciendo clic <a class="aqui" href="https://www.chileatiende.gob.cl/fichas/51436-ley-de-tenencia-responsable-de-mascotas-y-animales-de-compania-ley-cholito" target="_blank">aquí</a></p>
+				<p class="pt-3">Obtén información sobre la Ley de Tenencia Responsable de Mascotas y Animales de Compañía haciendo clic <a class="aqui" href="https://www.chileatiende.gob.cl/fichas/51436-ley-de-tenencia-responsable-de-mascotas-y-animales-de-compania-ley-cholito" target="_blank">aquí</a></p>
 			</div>
 		</div>
 	</footer>
