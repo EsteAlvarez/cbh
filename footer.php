@@ -22,7 +22,7 @@
 				<a href="https://www.tiktok.com/@fundacioncbh" target="_blank"><i class="bi bi-tiktok fs-2"></i></a>
 			</div>
 			<div class="col-12 mt-3 correo">
-				<p><i class="fa-regular fa-envelope"></i>contacto@fundacioncbh.cl</p>
+				<p><i class="fa-regular fa-envelope"></i> contacto@fundacioncbh.cl</p>
 				<a class="fw-semibold" href="http://fundacioncbh.cl/admin/login.php" target="_blank">Registro</a>
 				<p class="pt-3">Obtén información sobre la Ley de Tenencia Responsable de Mascotas y Animales de Compañía haciendo clic <a class="aqui" href="https://www.chileatiende.gob.cl/fichas/51436-ley-de-tenencia-responsable-de-mascotas-y-animales-de-compania-ley-cholito" target="_blank">aquí</a></p>
 			</div>
