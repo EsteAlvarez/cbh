@@ -16,7 +16,7 @@
 	</div>
 
 	<form class="container" action="post">
-			<fieldset class="col-12 row p-1 mb-4">
+			<fieldset class="col-12 row p-1 mb-4 contenedor-form-adopcion">
 				<legend class="mb-4">Datos Personales</legend>
 				<label class="col-md-6 col-12 form-label mb-4" for="nombre">Nombre:
 					<input class="w-100 form-control" id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre">
@@ -43,7 +43,7 @@
 					<input class="w-100 form-control" id="telefono" name="telefono" type="tel" placeholder="Ingrese su teléfono">
 				</label>
 			</fieldset>
-			<fieldset class="col-12 row p-1">
+			<fieldset class="col-12 row p-1 contenedor-form-adopcion">
 				<legend class="mb-4">Datos Generales Para Adopción</legend>
 				<label class="col-md-6 col-12 form-label mb-4" for="nombre_rescatado">Nombre del rescatado al que postula:
 					<input class="w-100 form-control" id="nombre_rescatado" name="nombre_rescatado" type="text" readonly value="<?php echo get_the_title();?>">

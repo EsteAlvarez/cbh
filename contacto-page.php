@@ -15,22 +15,39 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main container">
+		<!--Migas de pan-->
+		<div class="container my-3">
+			<nav aria-label="breadcrumb" class="migas">
+			<ol class="breadcrumb m-0 p-0">
+				<li class="breadcrumb-item"><a class="text-decoration-none link-migas" href="<?php echo home_url();?>">Inicio</a></li>
+				<li class="breadcrumb-item active fw-bold" aria-current="page">Contacto</li>
+			</ol>
+			</nav>
+		</div>
+		<!--Migas de pan-->
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<!--Formulario de contacto-->
+		<section class="row my-5">
+			<div class="col-lg-6">
+				<h1><?php echo get_the_title();?></h1>
+				<p><?php the_content();?></p>
+			</div>
+			<?php
+				while ( have_posts() ) :
+					the_post();
 
-			get_template_part( 'template-parts/content', 'contacto-page' );
+					get_template_part( 'template-parts/content', 'contacto-page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
 
-		endwhile; // End of the loop.
-		?>
-
+				endwhile; // End of the loop.
+			?>
+		</section>
+		<!--Formulario de contacto-->
 	</main><!-- #main -->
 
 <?php

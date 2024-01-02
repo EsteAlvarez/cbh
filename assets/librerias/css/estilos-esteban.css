@@ -22,7 +22,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
-    background-image: url("https://estealvarez.laboratoriodiseno.cl/fundacioncbh/wp-content/uploads/2023/12/fondo-cbh.jpg");
 }
 p {
     font-family: 'Rubik', sans-serif;
@@ -631,7 +630,7 @@ h1, h2, h3, h4, h5, h6, legend {
 /*Adóptanos*/
 /*Banner nuestra causa*/
 .banner-causa {
-    background-color: var(--color-banner-ripley);
+    background-color: rgba(201, 193, 230, .7);
 }
 .contenedor-contador {
     border: 10px solid var(--color-blanco);
@@ -701,7 +700,7 @@ h1, h2, h3, h4, h5, h6, legend {
 form {
     font-family: 'Rubik', sans-serif;
 }
-fieldset {
+.contenedor-form-adopcion {
     border: 1px solid var(--color-texto-cuadriculas);
     border-radius: 3px;
 }
@@ -710,3 +709,10 @@ fieldset {
     height: auto;
 }
 /*Ficha de mascota*/
+
+label > input {
+    border-color: var(--color-texto-cuadriculas);
+}
+label {
+    font-weight: bold;
+}
