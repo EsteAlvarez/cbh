@@ -86,26 +86,26 @@ get_header();
 			<!--Cards de Facebook y tiktok-->
 			<div class="row px-lg-5 px-md-3 px-1">
 				<div class="col-lg-6 col-md-12 col-12 cards-rrss mb-lg-0 mb-md-3 mb-3">
-					<a href="">
+					<a href="<?php the_field('link_de_primera_red_social');?>" target="_blank">
 						<div class="card-facebook card-hover text-center p-4 h-100">
 							<p class="contenedor-icono-rrss mb-3">
 								<i class="fa-brands fa-facebook fs-1"></i>
 							</p>
-							<p class="fw-bold">Usuario de Facebook</p>
-							<h5 class="titulo-card-rrss">Facebook</h5>
-							<p>Visítanos en Facebook y mantente al tanto de nuestras últimas noticias y eventos. ¡Síguenos para estar conectado con nuestra comunidad amante de los animales!</p>
+							<p class="fw-bold"><?php the_field('usuario_de_primera_red_social');?></p>
+							<h3 class="titulo-card-rrss h5"><?php the_field('nombre_de_primera_red_social');?></h3>
+							<p><?php the_field('descripcion_de_primera_red_social');?></p>
 						</div>	
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-12 col-12 cards-rrss">
-					<a href="">
+					<a href="<?php the_field('link_de_segunda_red_social');?>">
 						<div class="card-tiktok card-hover text-center p-4 h-100">
 							<p class="contenedor-icono-rrss mb-3">
 								<i class="fa-brands fa-tiktok fs-1"></i>
 							</p>
-							<p class="fw-bold">Usuario de Tiktok</p>
-							<h5 class="titulo-card-rrss">Tiktok</h5>
-							<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales con nosotros.</p>
+							<p class="fw-bold"><?php the_field('usuario_de_segunda_red_social');?></p>
+							<h3 class="titulo-card-rrss h5"><?php the_field('nombre_de_segunda_red_social');?></h3>
+							<p><?php the_field('descripcion_de_segunda_red_social');?></p>
 						</div>
 					</a>
 				</div>
