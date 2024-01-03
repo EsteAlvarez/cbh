@@ -11,6 +11,17 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main container">
+		<!--Migas de pan-->
+		<div class="container my-3">
+			<nav aria-label="breadcrumb" class="migas">
+			<ol class="breadcrumb m-0 p-0">
+				<li class="breadcrumb-item"><a class="text-decoration-none link-migas" href="<?php echo home_url();?>">Inicio</a></li>
+				<li class="breadcrumb-item"><a class="text-decoration-none link-migas" href="<?php echo esc_url(get_permalink(get_page_by_path('adoptanos'))); ?>">Adóptanos</a></li>
+				<li class="breadcrumb-item active fw-bold" aria-current="page"><?php echo get_the_title();?></li>
+			</ol>
+			</nav>
+		</div>
+		<!--Migas de pan-->
 		<section class="my-5 p-3">
 			<div class="row">
 				<div class="col-lg-6">
