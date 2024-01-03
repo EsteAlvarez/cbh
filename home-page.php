@@ -96,7 +96,7 @@ get_header();
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-12 col-12 cards-rrss">
-					<a href="<?php the_field('link_de_segunda_red_social');?>">
+					<a href="<?php the_field('link_de_segunda_red_social');?>" target="_blank">
 						<div class="card-tiktok card-hover text-center p-4 h-100">
 							<p class="contenedor-icono-rrss mb-3">
 								<i class="fa-brands fa-tiktok fs-1"></i>
