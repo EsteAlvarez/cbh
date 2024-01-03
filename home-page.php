@@ -101,8 +101,8 @@ get_header();
 							<p class="contenedor-icono-rrss mb-3">
 								<i class="fa-brands fa-tiktok fs-1"></i>
 							</p>
-							<p class="fw-bold"><?php the_field('usuario_de_segunda_red_social');?></p>
 							<h3 class="titulo-card-rrss h5"><?php the_field('nombre_de_segunda_red_social');?></h3>
+							<p class="fw-bold"><?php the_field('usuario_de_segunda_red_social');?></p>
 							<p><?php the_field('descripcion_de_segunda_red_social');?></p>
 						</div>
 					</a>
