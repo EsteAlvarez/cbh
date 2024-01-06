@@ -733,14 +733,31 @@ label {
     border: 10px solid var(--color-borde-cuadricula-adopta);
     background-color: var(--color-cuadricula-adopta);
 }
-.cuadricula-como-ayudar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 9px;
-    grid-row-gap: 10px;
-}
 .imagen-como-ayudar {
     object-fit: contain;
+}
+.boton-donacion-sn {
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-texto-cuadriculas);
+    border: 1px solid var(--color-texto-cuadriculas);
+    border-radius: 3px;
+    padding: .1em .5em;
+    font-weight: 600;
+    transition: .5s;
+    width: 50%;
+    margin: 0%;
+}
+.boton-donacion-sn:visited {
+    color: var(--color-blanco);
+    background-color: var(--color-texto-cuadriculas);
+    border: 1px solid var(--color-texto-cuadriculas);
+ 
+}
+.boton-donacion-sn:hover {
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+    border: 1px solid var(--color-negro);
+
 }
 /*Sobre nosotros*/

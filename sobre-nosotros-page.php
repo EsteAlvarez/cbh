@@ -41,7 +41,7 @@ get_header();
 			<article class="row p-md-0 p-3">
 				<div class="col-lg-6 p-0 d-flex flex-wrap p-4">
 					<!--Misión-->
-					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+					<div class="col-lg-12 col-md-12 col-12 p-1 h-50 text-center d-flex flex-column justify-content-center align-items-center">
 						<div class="mision p-5 h-100">
 							<h2 class="h4"><?php the_field('titulo_mision');?></h2>
 							<span><?php the_field('texto_mision');?></span>
@@ -49,7 +49,7 @@ get_header();
 					</div>
 					<!--Misión-->
 					<!--Visión-->
-					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+					<div class="col-lg-12 col-md-12 col-12 p-1 h-50 text-center d-flex flex-column justify-content-center align-items-center">
 						<div class="vision p-5 h-100">
 							<h2 class="h4"><?php the_field('titulo_vision');?></h2>
 							<span><?php the_field('texto_vision');?></span>
@@ -57,37 +57,37 @@ get_header();
 					</div>
 					<!--Visión-->
 				</div>
-				<div class="col-lg-6 d-lg-flex d-none">
+				<figure class="col-lg-6 d-lg-flex d-none p-0">
 					<?php 
 					$image = get_field('imagen_mision_y_vision');
 					if( !empty( $image ) ): ?>
 						<img class="img-fluid imagen-como-ayudar" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
-				</div>
+				</figure>
 			</article>
 		</section>
 		<!--Sección misión y visión-->
 
 		<!--Banner actividades que realizamos-->
-		<section class="container-fluid banner-causa text-center p-4 my-5">
-			<h2><?php the_field('titulo_seccion_actividades');?></h2>
-			<div class="row mt-3">
+		<section class="container-fluid banner-causa text-center p-md-2 p-4 my-5">
+			<h2 class="mt-3 mb-0"><?php the_field('titulo_seccion_actividades');?></h2>
+			<div class="row mt-3 m-0">
 				<!--Charlas-->
-				<div class="col-lg-4 col-md-6 text-center p-md-5 p-2 pb-md-0 pb-3">
+				<div class="col-lg-4 col-md-6 text-center p-md-4 p-3 mb-md-0 mb-3">
 					<i class="fs-3 fa-solid fa-comment"></i>
 					<h3 class="h5 mb-3"><?php the_field('titulo_actividad_uno');?></h3>
 					<p><?php the_field('descripcion_actividad_uno');?></p>
 				</div>
 				<!--Charlas-->
 				<!--Jornadas de adopción-->
-				<div class="col-lg-4 col-md-6 text-center p-md-5 p-2 pb-md-0 pb-3">
+				<div class="col-lg-4 col-md-6 text-center p-md-4 p-3 mb-md-0 mb-3">
 					<i class="fs-3 fa-solid fa-bone"></i>
 					<h3 class="h5 mb-3"><?php the_field('titulo_actividad_dos');?></h3>
 					<p><?php the_field('descripcion_actividad_dos');?></p>
 				</div>
 				<!--Jornadas de adopción-->
 				<!--Esterilizaciones masivas-->
-				<div class="col-lg-4 text-center p-md-5 p-2 pb-md-0 pb-3">
+				<div class="col-lg-4 col-md-6 mx-lg-0 mx-md-auto text-center p-md-4 p-3 mb-md-0 mb-3">
 					<i class="fs-3 fa-solid fa-briefcase-medical"></i>
 					<h3 class="h5 mb-3"><?php the_field('titulo_actividad_tres');?></h3>
 					<p><?php the_field('descripcion_actividad_tres');?></p>
@@ -101,13 +101,13 @@ get_header();
 		<section class="container my-5">
 			<h2 class="text-center my-5"><?php the_field('titulo_seccion_como_ayudar');?></h2>
 			<article class="row p-md-0 p-3">
-				<div class="col-lg-5 d-lg-flex d-none">
+				<figure class="col-lg-5 d-lg-flex d-none p-0">
 					<?php 
 					$image = get_field('imagen_como_ayudar');
 					if( !empty( $image ) ): ?>
 						<img class="img-fluid imagen-como-ayudar" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
-				</div>
+				</figure>
 				<div class="col-lg-7">
 					<div class="row m-0 p-0">
 					<!--Adopta-->
@@ -131,7 +131,7 @@ get_header();
 						<div class="donacion-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-md-3 p-5 h-100">
 							<h3 class="h4"><?php the_field('titulo_donacion');?></h3>
 							<span><?php the_field('descripcion_donacion');?></span><br>
-							<a href="<?php the_field('link_a_donacion');?>">Donar</a>
+							<a class="boton-donacion-sn" href="<?php the_field('link_a_donacion');?>" target="_blank">Donar</a>
 						</div>
 					</div>
 					<!--Haz una donación-->
@@ -144,7 +144,6 @@ get_header();
 					</div>
 					<!--Comparte-->
 					</div>
-					
 				</div>
 			</article>
 		</section>
