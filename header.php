@@ -44,7 +44,7 @@
 					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('adoptanos'))); ?>">Adóptanos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('eventos'))); ?>">Próximos Eventos</a>
+					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('proximos-eventos'))); ?>">Próximos Eventos</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>">Contacto</a>
