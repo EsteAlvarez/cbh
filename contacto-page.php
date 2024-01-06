@@ -15,7 +15,16 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main container">
+	<main id="primary" class="site-main">
+		<!--Banner sobre nosotros-->
+		<section class="container-fluid banner-causa text-center p-4">
+			<div class="container">
+				<h1><?php echo get_the_title();?></h1>
+				<p><?php the_content();?></p>
+			</div>
+		</section>
+		<!--Banner sobre nosotros-->
+
 		<!--Migas de pan-->
 		<div class="container my-3">
 			<nav aria-label="breadcrumb" class="migas">
@@ -28,11 +37,7 @@ get_header();
 		<!--Migas de pan-->
 
 		<!--Formulario de contacto-->
-		<section class="row my-md-5 my-3 p-md-0 p-3">
-			<div class="col-lg-6 mb-lg-0 mb-md-3 mb-3">
-				<h1><?php echo get_the_title();?></h1>
-				<p><?php the_content();?></p>
-			</div>
+		<section class="container my-md-5 my-3 p-lg-5 p-md-4 p-3">
 			<?php
 				while ( have_posts() ) :
 					the_post();

@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-6'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-12'); ?>>
 <form class="container" action="post">
     <fieldset class="row">
         <!--Nombre-->
