@@ -733,5 +733,11 @@ label {
     border: 10px solid var(--color-borde-cuadricula-adopta);
     background-color: var(--color-cuadricula-adopta);
 }
-
+.cuadricula-como-ayudar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 10px;
+}
 /*Sobre nosotros*/
