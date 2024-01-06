@@ -70,10 +70,8 @@ get_header();
 
 		<!--Antes y después-->
 		<section class="container my-5">
-			<div class="row text-center">
-				<h2><?php the_field('titulo_de_seccion');?></h2>
-				<p><?php the_field('descripcion_de_la_seccion');?></p>
-			</div>
+			<h2 class="text-center"><?php the_field('titulo_de_seccion');?></h2>
+			<p class="text-center"><?php the_field('descripcion_de_la_seccion');?></p>
 			<!--Carrusel de casos de exito-->
 			<div id="carrusel_exitos" class="my-5">
 
