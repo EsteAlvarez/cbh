@@ -40,21 +40,22 @@ get_header();
 		<section class="container my-5">
 			<article class="row p-md-0 p-3">
 				<div class="col-lg-6 p-0 d-flex flex-wrap">
-
+					<!--Misión-->
 					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
 						<div class="mision p-5 h-100">
-							<h2 class="h4">Misión</h2>
-							<span>Nuestra misión es rescatar animales enfermos, maltratados o en total abandono</span>
+							<h2 class="h4"><?php the_field('titulo_mision');?></h2>
+							<span><?php the_field('texto_mision');?></span>
 						</div>
 					</div>
-
+					<!--Misión-->
+					<!--Visión-->
 					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
-						<div class="vision p-md-5 p-4 h-100">
-							<h2 class="h4">Visión</h2>
-							<span>Nuestra visión es crear un mundo en el que cada animal reciba el amor, cuidado y respeto que merece, y trabajamos incansablemente para lograrlo.</span>
+						<div class="vision p-5 h-100">
+							<h2 class="h4"><?php the_field('titulo_vision');?></h2>
+							<span><?php the_field('texto_vision');?></span>
 						</div>
 					</div>
-
+					<!--Visión-->
 				</div>
 				<div class="col-lg-6 d-lg-flex d-none border">
 					imagen
@@ -65,23 +66,29 @@ get_header();
 
 		<!--Banner actividades que realizamos-->
 		<section class="container-fluid banner-causa text-center p-4 my-5">
-			<h2>Actividades que realizamos</h2>
+			<h2><?php the_field('titulo_seccion_actividades');?></h2>
 			<div class="row mt-3">
+				<!--Charlas-->
 				<div class="col-lg-4 col-md-6 text-center p-md-5 p-2 pb-md-0 pb-3">
 					<i class="fs-3 fa-solid fa-comment"></i>
-					<h3 class="h5 mb-3">Charlas</h3>
-					<p>Ofrecemos charlas sobre tenencia responsable en colegios y jardines infantiles para educar a los más jóvenes acerca del cuidado de los animales y promover un futuro más compasivo y responsable</p>
+					<h3 class="h5 mb-3"><?php the_field('titulo_actividad_uno');?></h3>
+					<p><?php the_field('descripcion_actividad_uno');?></p>
 				</div>
+				<!--Charlas-->
+				<!--Jornadas de adopción-->
 				<div class="col-lg-4 col-md-6 text-center p-md-5 p-2 pb-md-0 pb-3">
 					<i class="fs-3 fa-solid fa-bone"></i>
-					<h3 class="h5 mb-3">Jornadas de adopción</h3>
-					<p>Nuestras jornadas de adopción son oportunidades emocionantes para encontrar un amigo peludo que necesite un hogar, brindándote un ambiente cálido y amigable para conocer a las mascotas en busca de una familia.</p>
+					<h3 class="h5 mb-3"><?php the_field('titulo_actividad_dos');?></h3>
+					<p><?php the_field('descripcion_actividad_dos');?></p>
 				</div>
+				<!--Jornadas de adopción-->
+				<!--Esterilizaciones masivas-->
 				<div class="col-lg-4 text-center p-md-5 p-2 pb-md-0 pb-3">
 					<i class="fs-3 fa-solid fa-briefcase-medical"></i>
-					<h3 class="h5 mb-3">Esterilizaciones masivas</h3>
-					<p>Las esterilizaciones son fundamentales para controlar la población de animales en situación de calle, reducir el sufrimiento y promover una convivencia más armoniosa entre los seres humanos y los animales.</p>
+					<h3 class="h5 mb-3"><?php the_field('titulo_actividad_tres');?></h3>
+					<p><?php the_field('descripcion_actividad_tres');?></p>
 				</div>
+				<!--Esterilizaciones masivas-->
 			</div>
 		</section>
 		<!--Banner actividades que realizamos-->
@@ -96,23 +103,23 @@ get_header();
 				<div class="col-lg-7 cuadricula-como-ayudar p-1">
 
 					<div class="adopta-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h2 class="h4">Adopta</h2>
+						<h3 class="h4">Adopta</h3>
 						<span> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</span>
 					</div>
 
 					<div class="voluntario-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h2 class="h4">Se Voluntario</h2>
+						<h3 class="h4">Se Voluntario</h3>
 						<span>Únete como voluntario en nuestras jornadas de adopción. Envía un mensaje de WhatsApp a +569 79587688 (Nicolas) para inscribirte y ser parte de nuestro equipo</span>
 					</div>
 
 					<div class="donacion-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h2 class="h4">Haz una Donación</h2>
+						<h3 class="h4">Haz una Donación</h3>
 						<span>Haz una donación para marcar una diferencia en las vidas de los animales necesitados y apoyar nuestra causa</span><br>
 						<a href="#">Donar</a>
 					</div>
 
 					<div class="mision text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h2 class="h4">Comparte</h2>
+						<h3 class="h4">Comparte</h3>
 						<span>Comparte nuestras publicaciones en redes sociales y ayúdanos a difundir nuestra causa</span>
 					</div>
 
