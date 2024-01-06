@@ -26,11 +26,11 @@ get_header();
 			?>
 			<article class="container p-4">
 				<div class="row">
-					<div class="col-lg-6 col-md-12 col-12 mb-lg-0 mb-md-3 mb-3">
+					<div class="col-lg-9 col-md-12 col-12 mb-lg-0 mb-md-3 mb-3">
 						<h1><?php the_field('titulo_nuestra_causa');?></h1>
 						<p><?php the_field('descripcion_nuestra_causa');?></p>
 					</div>
-					<div class="col-lg-6 col-md-12 col-12">
+					<div class="col-lg-3 col-md-12 col-12">
 						<div class="d-flex flex-column text-center contenedor-contador p-2">
 							<span class="fs-1"><?php echo contar_entradas();?></span>
 							<p><?php the_field('texto_contador_de_adopcion');?></p>
