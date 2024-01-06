@@ -13,8 +13,6 @@
     --color-banner-ripley: #C9C1E6;
     --color-blanco: #fff;
     --color-negro: #000;
-    --color-card-facebook: #F1D1FF;
-    --color-card-tiktok: #FFE5B8;
 }
 
 /*Fuentes*/
@@ -241,12 +239,12 @@ h1, h2, h3, h4, h5, h6, legend, label {
     font-weight: bold;
 }
 .card-facebook {
-    background-color:rgba(241, 209, 255, .7);
-    border: 10px solid var(--color-card-facebook);
+    background-color: var(--color-cuadricula-contacto);
+    border: 10px solid var(--color-borde-cuadricula-contacto);
 }
 .card-tiktok {
-    background-color:rgba(255, 229, 184, .7);
-    border: 10px solid var(--color-card-tiktok);
+    background-color: var(--color-cuadricula-donacion);
+    border: 10px solid var(--color-borde-cuadricula-donacion);
 }
 .contenedor-icono-rrss {
     background-color: var(--color-blanco);
@@ -709,8 +707,31 @@ form {
     width: 400px;
     height: auto;
 }
-/*Ficha de mascota*/
-
 label {
     font-weight: 600;
 }
+/*Ficha de mascota*/
+
+/*Sobre nosotros*/
+.mision {
+    border: 10px solid var(--color-borde-cuadricula-contacto);
+    background-color: var(--color-cuadricula-contacto);
+}
+.vision {
+    border: 10px solid var(--color-borde-cuadricula-adopta);
+    background-color: var(--color-cuadricula-adopta);
+}
+.adopta-sobre-nosotros {
+    border: 10px solid var(--color-borde-cuadricula-socio);
+    background-color: var(--color-cuadricula-socio);
+}
+.voluntario-sobre-nosotros {
+    border: 10px solid var(--color-borde-cuadricula-donacion);
+    background-color: var(--color-cuadricula-donacion);
+}
+.donacion-sobre-nosotros {
+    border: 10px solid var(--color-borde-cuadricula-adopta);
+    background-color: var(--color-cuadricula-adopta);
+}
+
+/*Sobre nosotros*/

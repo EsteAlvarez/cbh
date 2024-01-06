@@ -38,25 +38,29 @@ get_header();
 
 		<!--Sección misión y visión-->
 		<section class="container my-5">
-			<article class="row">
-				<div class="col-lg-6 border p-0 d-flex flex-wrap">
+			<article class="row p-lg-0 p-md-0 p-3">
+				<div class="col-lg-7 p-0 d-flex flex-wrap">
 
-					<figure class="col-6 border h-50 m-0">Imagen</figure>
+					<figure class="col-6 d-lg-flex d-none border m-0">Imagen</figure>
 
-					<div class="mision col-6 border h-50 p-5 text-center d-flex flex-column justify-content-center align-items-center">
-						<h2 class="h4">Misión</h2>
-						<p>Nuestra misión es rescatar animales enfermos, maltratados o en total abandono</p>
+					<div class="col-lg-6 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="mision p-5 h-100">
+							<h2 class="h4">Misión</h2>
+							<span>Nuestra misión es rescatar animales enfermos, maltratados o en total abandono</span>
+						</div>
 					</div>
 
-					<div class="vision col-6 border h-50 p-5 text-center d-flex flex-column justify-content-center align-items-center">
-						<h2 class="h4">Visión</h2>
-						<p>Nuestra visión es crear un mundo en el que cada animal reciba el amor, cuidado y respeto que merece, y trabajamos incansablemente para lograrlo.</p>
+					<div class="col-lg-6 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="vision p-lg-5 p-md-5 p-5">
+							<h2 class="h4">Visión</h2>
+							<span>Nuestra visión es crear un mundo en el que cada animal reciba el amor, cuidado y respeto que merece, y trabajamos incansablemente para lograrlo.</span>
+						</div>
 					</div>
 
-					<figure class="col-6 border h-50 m-0">Imagen</figure>
+					<figure class="col-6 d-lg-flex d-none border m-0">Imagen</figure>
 
 				</div>
-				<div class="col-lg-6 border">
+				<div class="col-lg-5 d-lg-flex d-none border">
 					imagen
 				</div>
 			</article>
@@ -90,30 +94,38 @@ get_header();
 		<section class="container my-5">
 			<h2 class="text-center my-5">¿Cómo Ayudar?</h2>
 			<article class="row">
-				<div class="col-lg-6 border">
+				<div class="col-lg-5 d-lg-flex d-none border">
 					imagen
 				</div>
-				<div class="col-lg-6 border p-0 d-flex flex-wrap">
+				<div class="col-lg-7 p-0 d-flex flex-wrap">
 
-					<div class="mision col-6 border h-50 p-5 text-center d-flex flex-column justify-content-center align-items-center">
-						<h2 class="h4">Adopta</h2>
-						<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
+					<div class="col-6 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="adopta-sobre-nosotros h-100 p-5">
+							<h2 class="h4">Adopta</h2>
+							<span> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</span>
+						</div>
 					</div>
 
-					<div class="mision col-6 border h-50 p-5 text-center d-flex flex-column justify-content-center align-items-center">
-						<h2 class="h4">Se Voluntario</h2>
-						<p>Únete como voluntario en nuestras jornadas de adopción. Envía un mensaje de WhatsApp a +569 79587688 (Nicolas) para inscribirte y ser parte de nuestro equipo</p>
+					<div class="col-6 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="voluntario-sobre-nosotros h-100 p-5">
+							<h2 class="h4">Se Voluntario</h2>
+							<span>Únete como voluntario en nuestras jornadas de adopción. Envía un mensaje de WhatsApp a +569 79587688 (Nicolas) para inscribirte y ser parte de nuestro equipo</span>
+						</div>
 					</div>
 
-					<div class="vision col-6 border h-50 p-5 text-center d-flex flex-column justify-content-center align-items-center">
-						<h2 class="h4">Haz una Donación</h2>
-						<p>Haz una donación para marcar una diferencia en las vidas de los animales necesitados y apoyar nuestra causa</p>
-						<a href="#">Donar</a>
+					<div class="col-6 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="donacion-sobre-nosotros h-100 p-5">
+							<h2 class="h4">Haz una Donación</h2>
+							<span>Haz una donación para marcar una diferencia en las vidas de los animales necesitados y apoyar nuestra causa</span><br>
+							<a href="#">Donar</a>
+						</div>
 					</div>
 
-					<div class="vision col-6 border h-50 p-5 text-center d-flex flex-column justify-content-center align-items-center">
-						<h2 class="h4">Comparte</h2>
-						<p>Comparte nuestras publicaciones en redes sociales y ayúdanos a difundir nuestra causa</p>
+					<div class="col-6 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="mision h-100 p-5">
+							<h2 class="h4">Comparte</h2>
+							<span>Comparte nuestras publicaciones en redes sociales y ayúdanos a difundir nuestra causa</span>
+						</div>
 					</div>
 
 				</div>
