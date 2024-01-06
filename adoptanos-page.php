@@ -73,8 +73,7 @@ get_header();
 			<h2 class="text-center"><?php the_field('titulo_de_seccion');?></h2>
 			<p class="text-center"><?php the_field('descripcion_de_la_seccion');?></p>
 			<!--Carrusel de casos de exito-->
-			<div id="carrusel_exitos" class="my-5">
-
+			<article id="carrusel_exitos" class="my-5">
 				<figure>
 					<?php 
 						$image = get_field('foto_1');
@@ -110,8 +109,7 @@ get_header();
 							<img class="img-ayd" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 				</figure>
-				
-			</div>
+			</article>
 			<!--Carrusel de casos de exito-->
 		</section>
 		<!--Antes y después-->
