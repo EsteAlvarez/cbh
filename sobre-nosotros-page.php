@@ -41,16 +41,16 @@ get_header();
 			<article class="row p-md-0 p-3">
 				<div class="col-lg-6 p-0 d-flex flex-wrap">
 					<!--Misión-->
-					<div class="col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
-						<div class="mision p-5 w-100">
+					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="mision p-5 h-100">
 							<h2 class="h4"><?php the_field('titulo_mision');?></h2>
 							<span><?php the_field('texto_mision');?></span>
 						</div>
 					</div>
 					<!--Misión-->
 					<!--Visión-->
-					<div class="col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
-						<div class="vision p-5 w-100">
+					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
+						<div class="vision p-5 h-100">
 							<h2 class="h4"><?php the_field('titulo_vision');?></h2>
 							<span><?php the_field('texto_vision');?></span>
 						</div>
