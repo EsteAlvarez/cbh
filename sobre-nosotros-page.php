@@ -39,7 +39,7 @@ get_header();
 		<!--Sección misión y visión-->
 		<section class="container my-5">
 			<article class="row p-md-0 p-3">
-				<div class="col-lg-6 p-0 d-flex flex-wrap">
+				<div class="col-lg-6 p-0 d-flex flex-wrap p-4">
 					<!--Misión-->
 					<div class="col-lg-12 col-md-6 col-12 p-1 text-center d-flex flex-column justify-content-center align-items-center">
 						<div class="mision p-5 h-100">
@@ -57,8 +57,12 @@ get_header();
 					</div>
 					<!--Visión-->
 				</div>
-				<div class="col-lg-6 d-lg-flex d-none border">
-					imagen
+				<div class="col-lg-6 d-lg-flex d-none">
+					<?php 
+					$image = get_field('imagen_mision_y_vision');
+					if( !empty( $image ) ): ?>
+						<img class="img-fluid p-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 				</div>
 			</article>
 		</section>
@@ -97,10 +101,14 @@ get_header();
 		<section class="container my-5">
 			<h2 class="text-center my-5"><?php the_field('titulo_seccion_como_ayudar');?></h2>
 			<article class="row p-md-0 p-3">
-				<div class="col-lg-5 d-lg-flex d-none border">
-					imagen
+				<div class="col-lg-5 d-lg-flex d-none">
+					<?php 
+					$image = get_field('imagen_como_ayudar');
+					if( !empty( $image ) ): ?>
+						<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 				</div>
-				<div class="col-lg-7 cuadricula-como-ayudar p-1">
+				<div class="col-lg-7 cuadricula-como-ayudar">
 					<!--Adopta-->
 					<div class="adopta-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
 						<h3 class="h4"><?php the_field('titulo_adopta');?></h3>
