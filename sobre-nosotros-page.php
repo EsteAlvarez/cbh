@@ -95,34 +95,37 @@ get_header();
 
 		<!--Sección cómo ayudar-->
 		<section class="container my-5">
-			<h2 class="text-center my-5">¿Cómo Ayudar?</h2>
+			<h2 class="text-center my-5"><?php the_field('titulo_seccion_como_ayudar');?></h2>
 			<article class="row p-md-0 p-3">
 				<div class="col-lg-5 d-lg-flex d-none border">
 					imagen
 				</div>
 				<div class="col-lg-7 cuadricula-como-ayudar p-1">
-
+					<!--Adopta-->
 					<div class="adopta-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4">Adopta</h3>
-						<span> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</span>
+						<h3 class="h4"><?php the_field('titulo_adopta');?></h3>
+						<span><?php the_field('descripcion_adopta');?></span>
 					</div>
-
+					<!--Adopta-->
+					<!--Se voluntario-->
 					<div class="voluntario-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4">Se Voluntario</h3>
-						<span>Únete como voluntario en nuestras jornadas de adopción. Envía un mensaje de WhatsApp a +569 79587688 (Nicolas) para inscribirte y ser parte de nuestro equipo</span>
+						<h3 class="h4"><?php the_field('titulo_se_voluntario');?></h3>
+						<span><?php the_field('descripcion_se_voluntario');?></span>
 					</div>
-
+					<!--Se voluntario-->
+					<!--Haz una donación-->
 					<div class="donacion-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4">Haz una Donación</h3>
-						<span>Haz una donación para marcar una diferencia en las vidas de los animales necesitados y apoyar nuestra causa</span><br>
-						<a href="#">Donar</a>
+						<h3 class="h4"><?php the_field('titulo_donacion');?></h3>
+						<span><?php the_field('descripcion_donacion');?></span><br>
+						<a href="<?php the_field('link_a_donacion');?>">Donar</a>
 					</div>
-
+					<!--Haz una donación-->
+					<!--Comparte-->
 					<div class="mision text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4">Comparte</h3>
-						<span>Comparte nuestras publicaciones en redes sociales y ayúdanos a difundir nuestra causa</span>
+						<h3 class="h4"><?php the_field('titulo_comparte');?></h3>
+						<span><?php the_field('descripcion_comparte');?></span>
 					</div>
-
+					<!--Comparte-->
 				</div>
 			</article>
 		</section>
