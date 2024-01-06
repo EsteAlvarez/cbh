@@ -740,4 +740,7 @@ label {
     grid-column-gap: 9px;
     grid-row-gap: 10px;
 }
+.imagen-como-ayudar {
+    object-fit: contain;
+}
 /*Sobre nosotros*/

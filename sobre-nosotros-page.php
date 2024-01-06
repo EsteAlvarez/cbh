@@ -61,7 +61,7 @@ get_header();
 					<?php 
 					$image = get_field('imagen_mision_y_vision');
 					if( !empty( $image ) ): ?>
-						<img class="img-fluid p-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<img class="img-fluid imagen-como-ayudar" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 				</div>
 			</article>
@@ -105,35 +105,46 @@ get_header();
 					<?php 
 					$image = get_field('imagen_como_ayudar');
 					if( !empty( $image ) ): ?>
-						<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<img class="img-fluid imagen-como-ayudar" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 				</div>
-				<div class="col-lg-7 cuadricula-como-ayudar">
+				<div class="col-lg-7">
+					<div class="row m-0 p-0">
 					<!--Adopta-->
-					<div class="adopta-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4"><?php the_field('titulo_adopta');?></h3>
-						<span><?php the_field('descripcion_adopta');?></span>
+					<div class="col-lg-6 col-md-6 col-12 mb-md-2 mb-3">
+						<div class="adopta-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-md-3 p-5 h-100">
+							<h3 class="h4"><?php the_field('titulo_adopta');?></h3>
+							<span><?php the_field('descripcion_adopta');?></span>
+						</div>
 					</div>
 					<!--Adopta-->
 					<!--Se voluntario-->
-					<div class="voluntario-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4"><?php the_field('titulo_se_voluntario');?></h3>
-						<span><?php the_field('descripcion_se_voluntario');?></span>
+					<div class="col-lg-6 col-md-6 col-12 mb-md-2 mb-3">
+						<div class="voluntario-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-md-3 p-5 h-100">
+							<h3 class="h4"><?php the_field('titulo_se_voluntario');?></h3>
+							<span><?php the_field('descripcion_se_voluntario');?></span>
+						</div>
 					</div>
 					<!--Se voluntario-->
 					<!--Haz una donación-->
-					<div class="donacion-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4"><?php the_field('titulo_donacion');?></h3>
-						<span><?php the_field('descripcion_donacion');?></span><br>
-						<a href="<?php the_field('link_a_donacion');?>">Donar</a>
+					<div class="col-lg-6 col-md-6 col-12 mb-md-0 mb-3">
+						<div class="donacion-sobre-nosotros text-center d-flex flex-column justify-content-center align-items-center p-md-3 p-5 h-100">
+							<h3 class="h4"><?php the_field('titulo_donacion');?></h3>
+							<span><?php the_field('descripcion_donacion');?></span><br>
+							<a href="<?php the_field('link_a_donacion');?>">Donar</a>
+						</div>
 					</div>
 					<!--Haz una donación-->
 					<!--Comparte-->
-					<div class="mision text-center d-flex flex-column justify-content-center align-items-center p-4">
-						<h3 class="h4"><?php the_field('titulo_comparte');?></h3>
-						<span><?php the_field('descripcion_comparte');?></span>
+					<div class="col-lg-6 col-md-6 col-12">
+						<div class="mision text-center d-flex flex-column justify-content-center align-items-center p-md-3 p-5 h-100">
+							<h3 class="h4"><?php the_field('titulo_comparte');?></h3>
+							<span><?php the_field('descripcion_comparte');?></span>
+						</div>
 					</div>
 					<!--Comparte-->
+					</div>
+					
 				</div>
 			</article>
 		</section>
