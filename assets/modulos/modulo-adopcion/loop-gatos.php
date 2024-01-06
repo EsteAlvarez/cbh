@@ -39,7 +39,7 @@ hoja_estilos_adopcion();
             <div class="card mx-auto h-100 position-relative" style="width: 18rem;">
                 <figure class="imagen-mascota m-0"><?php echo cbh_post_thumbnail(); ?></figure>
                 <div class="card-body pt-0 position-absolute">
-                    <h3 class="card-title fw-bold"><i class="fa-solid fa-dog h3"></i> <?php echo get_the_title();?></h3>
+                    <h3 class="card-title fw-bold"><?php echo get_the_title();?></h3>
                     <p class="card-text"><?php the_field('personalidad');?></p>
                     <a href="<?php the_permalink();?>" class="boton-adoptame-cachorros">Más información</a>
                 </div>
