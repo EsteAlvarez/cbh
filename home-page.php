@@ -17,7 +17,21 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<!--Carrusel adóptanos-->
-		<section class="carousel mb-5">
+		<section class="container-fluid">
+			<article class="p-0 m-0" id="carrusel_inicio">
+				<div class="p-5 d-flex justify-content-center align-items-end flex-column banner-causa">
+					<h1 class="mb-3">Adoptanos</h1>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cumque, fuga neque pariatur temporibus nisi fugit sequi consectetur earum repellat?</p>
+				</div>
+				<div class="p-5 d-flex justify-content-center align-items-end flex-column banner-causa">
+					<h2 class="mb-3">Adoptanos</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cumque, fuga neque pariatur temporibus nisi fugit sequi consectetur earum repellat?</p>
+				</div>
+				<div class="p-5 d-flex justify-content-center align-items-end flex-column banner-causa">
+					<h2 class="mb-3">Adoptanos</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cumque, fuga neque pariatur temporibus nisi fugit sequi consectetur earum repellat?</p>
+				</div>
+			</article>
 		</section>
 		<!--Carrusel adóptanos-->
 
