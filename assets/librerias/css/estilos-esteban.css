@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6, legend, label {
 .carousel-tres{
     background-color: var(--color-borde-cuadricula-eventos);
 }
+.imagen-carrusel {
+    height: 300px;
+    width: 300px;
+}
 /*Carousel inicio*/
 
 /*Cuadricula*/

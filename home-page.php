@@ -20,46 +20,46 @@ get_header();
 		<section class="container-fluid p-0">
 			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
-					<div class="carousel-item carousel-uno active p-3">
-						<div class="d-flex w-75 mx-auto p-2">
-							<figure class="m-0 p-0 w-50 text-center">
+					<div class="carousel-item carousel-uno active">
+						<div class="d-flex w-75 mx-auto p-lg-0 p-5">
+							<figure class="m-0 p-0 text-center col-6 p-4 pb-0 d-lg-block d-none">
 								<?php 
 								$image = get_field('imagen_ripley_puntos');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center p-3 flex-column w-50">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
 								<h1>Adopta</h1>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item carousel-dos p-3">
-						<div class="d-flex w-75 mx-auto p-2">
-							<figure class="m-0 p-0 w-50 text-center">
+					<div class="carousel-item carousel-dos">
+						<div class="d-flex w-75 mx-auto">
+							<figure class="m-0 p-0 col-6 text-center p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_ripley_puntos');
 								if( !empty( $image ) ): ?>
 									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center p-3 flex-column w-50">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
 								<h2 class="h1">Redes sociales</h2>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item carousel-tres p-3">
-						<div class="d-flex w-75 mx-auto p-2">
-							<figure class="m-0 p-0 w-50 text-center">
+					<div class="carousel-item carousel-tres">
+						<div class="d-flex w-75 mx-auto">
+							<figure class="m-0 p-0 col-6 text-center p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_ripley_puntos');
 								if( !empty( $image ) ): ?>
 									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center p-3 flex-column w-50">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
 								<h2 class="h1">Eventos</h2>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
 							</div>
