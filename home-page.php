@@ -26,7 +26,7 @@ get_header();
 								<?php 
 								$image = get_field('imagen_ripley_puntos');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
 							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
