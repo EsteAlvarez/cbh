@@ -17,21 +17,64 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<!--Carrusel adóptanos-->
-		<section class="container-fluid">
-			<article class="p-0 m-0" id="carrusel_inicio">
-				<div class="p-5 d-flex justify-content-center align-items-end flex-column banner-causa">
-					<h1 class="mb-3">Adoptanos</h1>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cumque, fuga neque pariatur temporibus nisi fugit sequi consectetur earum repellat?</p>
+		<section class="container-fluid p-0">
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item carousel-uno active p-3">
+						<div class="d-flex w-75 mx-auto p-2">
+							<figure class="m-0 p-0 w-50 text-center">
+								<?php 
+								$image = get_field('imagen_ripley_puntos');
+								if( !empty( $image ) ): ?>
+									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+							</figure>
+							<div class="d-flex justify-content-center p-3 flex-column w-50">
+								<h1>Adopta</h1>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-dos p-3">
+						<div class="d-flex w-75 mx-auto p-2">
+							<figure class="m-0 p-0 w-50 text-center">
+								<?php 
+								$image = get_field('imagen_ripley_puntos');
+								if( !empty( $image ) ): ?>
+									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+							</figure>
+							<div class="d-flex justify-content-center p-3 flex-column w-50">
+								<h2 class="h1">Redes sociales</h2>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-tres p-3">
+						<div class="d-flex w-75 mx-auto p-2">
+							<figure class="m-0 p-0 w-50 text-center">
+								<?php 
+								$image = get_field('imagen_ripley_puntos');
+								if( !empty( $image ) ): ?>
+									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+							</figure>
+							<div class="d-flex justify-content-center p-3 flex-column w-50">
+								<h2 class="h1">Eventos</h2>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="p-5 d-flex justify-content-center align-items-end flex-column banner-causa">
-					<h2 class="mb-3">Adoptanos</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cumque, fuga neque pariatur temporibus nisi fugit sequi consectetur earum repellat?</p>
-				</div>
-				<div class="p-5 d-flex justify-content-center align-items-end flex-column banner-causa">
-					<h2 class="mb-3">Adoptanos</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cumque, fuga neque pariatur temporibus nisi fugit sequi consectetur earum repellat?</p>
-				</div>
-			</article>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 		</section>
 		<!--Carrusel adóptanos-->
 
