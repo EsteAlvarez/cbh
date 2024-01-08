@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6, legend, label {
 }
 /*Fuentes*/
 
+.zoom img {
+    width: 75%;
+}
+
 /*Carousel inicio*/
 .carousel-uno{
     background-color: var(--color-banner-ripley);
@@ -42,6 +46,19 @@ h1, h2, h3, h4, h5, h6, legend, label {
 .imagen-carrusel {
     height: 300px;
     width: 300px;
+}
+.carusel-redes {
+    color: var(--color-texto-cuadriculas);
+    transition: .5s;
+}
+.carusel-redes:visited {
+    color: var(--color-texto-cuadriculas);
+}
+.carusel-redes:hover {
+    color: var(--color-negro);
+}
+.carousel-item {
+    min-height: 40vh;
 }
 /*Carousel inicio*/
 

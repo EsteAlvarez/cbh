@@ -22,33 +22,38 @@ get_header();
 				<div class="carousel-inner">
 					<div class="carousel-item carousel-uno active">
 						<div class="d-flex w-75 mx-auto p-lg-0 p-5">
-							<figure class="m-0 p-0 text-center col-6 p-4 pb-0 d-lg-block d-none">
+							<figure class="m-0 p-0 text-end col-6 p-4 pb-0 d-lg-block d-none">
 								<?php 
-								$image = get_field('imagen_ripley_puntos');
+								$image = get_field('imagen_primer_item');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
 							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
 								<h1>Adopta</h1>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
+								<p>Adopta y cambia la vida de un callejero</p>
 							</div>
 						</div>
 					</div>
 					<div class="carousel-item carousel-dos">
-						<div class="d-flex w-75 mx-auto">
-							<figure class="m-0 p-0 col-6 text-center p-4 pb-0">
+						<a href="#redes_sociales" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
+							<figure class="d-lg-block d-none d-none m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
-								$image = get_field('imagen_ripley_puntos');
+								$image = get_field('imagen_segundo_item');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-4 flex-column">
 								<h2 class="h1">Redes sociales</h2>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
+								<p>Visita nuestras redes sociales</p>
+								<div>
+									<i class="bi bi-facebook fs-2"></i>
+									<i class="bi bi-instagram fs-2 px-2"></i>
+									<i class="bi bi-tiktok fs-2"></i>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="carousel-item carousel-tres">
 						<div class="d-flex w-75 mx-auto">
@@ -133,7 +138,7 @@ get_header();
 		<!--Ripley puntos-->
 
 		<!--Redes sociales-->
-		<section class="container my-5">
+		<section id="redes_sociales" class="container my-5">
 			<!--Feed de Instagram-->
 			<div>
 				

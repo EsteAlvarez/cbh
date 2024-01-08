@@ -28,7 +28,7 @@
 <header id="masthead" class="container-fluid px-lg-5 bg-white">
 	<nav class="navbar navbar-expand-lg bg-transparent">
 		<div class="container-fluid">
-		<h1 class="navbar-brand zoom"><?php the_custom_logo(); ?></h1>
+		<figure class="navbar-brand zoom m-0 p-0"><?php the_custom_logo(); ?></figure>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<i class="fa-solid fa-dog"></i> / <i class="fa-solid fa-cat"></i>
 			</button>
