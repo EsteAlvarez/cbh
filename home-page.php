@@ -30,13 +30,13 @@ get_header();
 								<?php endif; ?>
 							</figure>
 							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
-								<h1>Adopta</h1>
-								<p>Adopta y cambia la vida de un callejero</p>
+								<h1><?php the_field('titulo_primer_item');?></h1>
+								<p><?php the_field('descripcion_primer_item');?></p>
 							</div>
 						</div>
 					</div>
 					<div class="carousel-item carousel-dos">
-						<a href="#redes_sociales" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
+						<a href="link_segundo_item" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
 							<figure class="d-lg-block d-none d-none m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_segundo_item');
@@ -45,8 +45,8 @@ get_header();
 								<?php endif; ?>
 							</figure>
 							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-4 flex-column">
-								<h2 class="h1">Redes sociales</h2>
-								<p>Visita nuestras redes sociales</p>
+								<h2 class="h1"><?php the_field('titulo_segundo_item');?></h2>
+								<p><?php the_field('descripcion_segundo_item');?></p>
 								<div>
 									<i class="bi bi-facebook fs-2"></i>
 									<i class="bi bi-instagram fs-2 px-2"></i>
@@ -57,16 +57,16 @@ get_header();
 					</div>
 					<div class="carousel-item carousel-tres">
 						<div class="d-flex w-75 mx-auto">
-							<figure class="m-0 p-0 col-6 text-center p-4 pb-0">
+							<figure class="m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
-								$image = get_field('imagen_ripley_puntos');
+								$image = get_field('imagen_tercer_item');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-ripley" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
 							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
-								<h2 class="h1">Eventos</h2>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione explicabo quis cumque fugiat quas, repellendus rem dolorem similique esse?</p>
+								<h2 class="h1"><?php the_field('titulo_tercer_item');?></h2>
+								<p><?php the_field('descripcion_tercer_item');?></p>
 							</div>
 						</div>
 					</div>
