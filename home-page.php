@@ -36,7 +36,7 @@ get_header();
 						</a>
 					</div>
 					<div class="carousel-item carousel-dos">
-						<a href="link_segundo_item" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
+						<a href="#redes_sociales" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
 							<figure class="d-lg-block d-none d-none m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_segundo_item');
@@ -56,7 +56,7 @@ get_header();
 						</a>
 					</div>
 					<div class="carousel-item carousel-tres">
-						<div class="d-flex w-75 mx-auto">
+						<a href="<?php the_field('link_tercer_item');?>" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
 							<figure class="m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_tercer_item');
@@ -68,7 +68,7 @@ get_header();
 								<h2 class="h1"><?php the_field('titulo_tercer_item');?></h2>
 								<p><?php the_field('descripcion_tercer_item');?></p>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
