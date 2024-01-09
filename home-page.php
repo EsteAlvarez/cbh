@@ -21,7 +21,7 @@ get_header();
 			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item carousel-uno active">
-						<div class="d-flex w-75 mx-auto p-lg-0 p-5">
+						<a href="<?php the_field('link_primer_item');?>" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
 							<figure class="m-0 p-0 text-end col-6 p-4 pb-0 d-lg-block d-none">
 								<?php 
 								$image = get_field('imagen_primer_item');
@@ -33,7 +33,7 @@ get_header();
 								<h1><?php the_field('titulo_primer_item');?></h1>
 								<p><?php the_field('descripcion_primer_item');?></p>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="carousel-item carousel-dos">
 						<a href="link_segundo_item" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
