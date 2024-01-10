@@ -107,7 +107,7 @@ get_header();
 			</a>
 
 			<a href="adoptanos" class="area_derecha">
-				<h2 class="h3"><?php the_field('adopta');?></h2>
+				<h2 class="h3 pt-md-4 pt-2"><?php the_field('adopta');?></h2>
 				<div>
 					<?php 
 					$image = get_field('imagen_adopta');
