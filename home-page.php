@@ -29,7 +29,7 @@ get_header();
 									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-5 flex-column">
 								<h1><?php the_field('titulo_primer_item');?></h1>
 								<p><?php the_field('descripcion_primer_item');?></p>
 							</div>
@@ -44,7 +44,7 @@ get_header();
 									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-4 flex-column">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-5 flex-column">
 								<h2 class="h1"><?php the_field('titulo_segundo_item');?></h2>
 								<p><?php the_field('descripcion_segundo_item');?></p>
 								<div>
@@ -57,14 +57,14 @@ get_header();
 					</div>
 					<div class="carousel-item carousel-tres">
 						<a href="<?php the_field('link_tercer_item');?>" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
-							<figure class="m-0 p-0 col-6 text-end p-4 pb-0">
+							<figure class="d-lg-block d-none d-none m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_tercer_item');
 								if( !empty( $image ) ): ?>
 									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-0 flex-column">
+							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-5 flex-column">
 								<h2 class="h1"><?php the_field('titulo_tercer_item');?></h2>
 								<p><?php the_field('descripcion_tercer_item');?></p>
 							</div>
@@ -87,18 +87,33 @@ get_header();
 		<section class="container_grid my-5">
 
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_centro">
-				<h2 class="h3"><?php the_field('donacion');?></h2>
+				<h2 class="h3 pt-md-4 pt-2"><?php the_field('donacion');?></h2>
 				<p><?php the_field('texto_donacion');?></p>
+				<?php 
+				$image = get_field('imagen_donacion');
+				if( !empty( $image ) ): ?>
+					<img class="img_enlaces" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
 			</a>
 
 			<a href="proximos-eventos" class="area_izquierda">
-				<h2 class="h3"><?php the_field('eventos');?></h2>
+				<h2 class="h3 pt-md-5 pt-2"><?php the_field('eventos');?></h2>
 				<p><?php the_field('texto_eventos');?></p>
+				<?php 
+				$image = get_field('imagen_eventos');
+				if( !empty( $image ) ): ?>
+					<img class="img_enlaces" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
 			</a>
 
 			<a href="adoptanos" class="area_derecha">
 				<h2 class="h3"><?php the_field('adopta');?></h2>
 				<div>
+					<?php 
+					$image = get_field('imagen_adopta');
+					if( !empty( $image ) ): ?>
+						<img class="img_enlaces" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 					<p><?php the_field('texto_adopta');?></p>
 				</div>
 			</a>
@@ -106,11 +121,21 @@ get_header();
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_derecha_inferior">
 				<h2 class="h3"><?php the_field('socio');?></h2>
 				<p><?php the_field('texto_socio');?></p>
+				<?php 
+				$image = get_field('imagen_socios');
+				if( !empty( $image ) ): ?>
+					<img class="img_enlaces" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
 			</a>
 
 			<a href="contacto" class="area_izquierda_inferior">
 				<h2 class="h3"><?php the_field('contacto');?></h2>
-				<div>	
+				<div>
+					<?php 
+					$image = get_field('imagen_contacto');
+					if( !empty( $image ) ): ?>
+						<img class="img_enlaces" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 					<p><?php the_field('texto_contacto');?></p>
 				</div>
 			</a>
@@ -146,26 +171,26 @@ get_header();
 			<!--Feed de Instagram-->
 
 			<!--Cards de Facebook y tiktok-->
-			<div class="row px-lg-5 px-md-3 px-1">
+			<div class="row px-lg-5 px-md-3 px-1 h-100">
 				<div class="col-lg-6 col-md-12 col-12 cards-rrss mb-lg-0 mb-md-3 mb-3">
 					<a href="<?php the_field('link_de_primera_red_social');?>" target="_blank">
-						<div class="card-facebook card-hover text-center p-4 h-100">
+						<div class="card-facebook card-hover text-center p-md-4 p-2 h-100">
 							<p class="contenedor-icono-rrss mb-3"><i class="fa-brands fa-facebook fs-1"></i></p>
-							<h3 class="titulo-card-rrss h5"><?php the_field('nombre_de_primera_red_social');?></h3>
+							<h3 class="titulo-card-rrss h5 d-md-block d-none"><?php the_field('nombre_de_primera_red_social');?></h3>
 							<p class="fw-bold"><?php the_field('usuario_de_primera_red_social');?></p>
-							<p><?php the_field('descripcion_de_primera_red_social');?></p>
+							<p class="d-md-block d-none"><?php the_field('descripcion_de_primera_red_social');?></p>
 						</div>	
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-12 col-12 cards-rrss">
 					<a href="<?php the_field('link_de_segunda_red_social');?>" target="_blank">
-						<div class="card-tiktok card-hover text-center p-4 h-100">
+						<div class="card-tiktok card-hover text-center p-md-4 p-2 h-100">
 							<p class="contenedor-icono-rrss mb-3">
 								<i class="fa-brands fa-tiktok fs-1"></i>
 							</p>
-							<h3 class="titulo-card-rrss h5"><?php the_field('nombre_de_segunda_red_social');?></h3>
+							<h3 class="titulo-card-rrss h5 d-md-block d-none"><?php the_field('nombre_de_segunda_red_social');?></h3>
 							<p class="fw-bold"><?php the_field('usuario_de_segunda_red_social');?></p>
-							<p><?php the_field('descripcion_de_segunda_red_social');?></p>
+							<p class="d-md-block d-none"><?php the_field('descripcion_de_segunda_red_social');?></p>
 						</div>
 					</a>
 				</div>

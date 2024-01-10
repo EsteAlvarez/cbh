@@ -29,9 +29,11 @@ h1, h2, h3, h4, h5, h6, legend, label {
 }
 /*Fuentes*/
 
+/*Logo*/
 .zoom img {
     width: 75%;
 }
+/*Logo*/
 
 /*Carousel inicio*/
 .carousel-uno{
@@ -58,7 +60,7 @@ h1, h2, h3, h4, h5, h6, legend, label {
     color: var(--color-negro);
 }
 .carousel-item {
-    min-height: 40vh;
+    min-height: 44vh;
 }
 /*Carousel inicio*/
 
@@ -96,12 +98,12 @@ h1, h2, h3, h4, h5, h6, legend, label {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    /* padding: 2%; */
 }
 .area_centro img.img_enlaces{
-    width: 90px;
+    width: 100px;
 }
 .area_centro h2{
     font-size: 25px;
@@ -122,9 +124,8 @@ h1, h2, h3, h4, h5, h6, legend, label {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 2%;
 }
 .area_izquierda img.img_enlaces{
     width: 240px;
@@ -637,7 +638,6 @@ h1, h2, h3, h4, h5, h6, legend, label {
         justify-content: space-around;
         align-items: center;
     }
-
     .area_izquierda_inferior h3 {
         font-size: 18px;
     }
