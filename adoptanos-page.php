@@ -53,9 +53,9 @@ get_header();
 		<!--Migas de pan-->
 
 		<!--Filtros-->
-		<div class="container d-flex flex-lg-row flex-column justify-content-lg-around justify-content-center align-items-center">
+		<div class="container d-flex flex-lg-row flex-column justify-content-lg-center justify-content-center align-items-center">
 			<button id="cachorros" class="boton-filtro-mascotas mb-lg-0 mb-3"><i class="fa-solid fa-dog fs-6"></i> Cachorros</button>
-			<button id="perros" class="boton-filtro-mascotas mb-lg-0 mb-3"><i class="fa-solid fa-dog fs-5"></i> Perros</button>
+			<button id="perros" class="boton-filtro-mascotas mb-lg-0 mb-3 mx-md-5 mx-0"><i class="fa-solid fa-dog fs-5"></i> Perros</button>
 			<button id="gatos" class="boton-filtro-mascotas"><i class="fa-solid fa-cat fs-5"></i> Gatos</button>
 		</div>
 		<!--Filtros-->

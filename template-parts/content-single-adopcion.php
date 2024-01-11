@@ -9,14 +9,14 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('contenedor-formulario-adopcion'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="text-center my-5">
-		<h2>Lorem, ipsum dolor.</h2>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi soluta fugiat ipsum nam velit autem alias maiores, expedita corrupti natus, quia iure hic repellendus id ipsam fugit laboriosam. Architecto, omnis!</p>
+		<h2 class="mb-3">Formulario de adopción</h2>
+		<p>Gracias por considerar la adopción de una mascota. Este formulario nos ayuda a conocer más sobre ti y tus circunstancias para asegurarnos de que la mascota y su nuevo hogar sean una combinación perfecta. Por favor, completa el formulario con sinceridad y detalle. Tu compromiso con el bienestar animal es apreciado.</p>
 	</div>
 
 	<form class="container" action="post">
-			<fieldset class="col-12 row p-1 mb-4 contenedor-form-adopcion">
+			<fieldset class="col-12 row p-1 mb-4 contenedor-form-adopcion mx-auto">
 				<legend class="mb-4">Datos Personales</legend>
 				<label class="col-md-6 col-12 form-label mb-4" for="nombre">Nombre:
 					<input class="w-100 form-control" id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre">
@@ -37,13 +37,13 @@
 					<input class="w-100 form-control" id="comuna" name="comuna" type="text" placeholder="Ingrese su comuna">
 				</label>
 				<label class="col-md-6 col-12 form-label mb-4" for="email">Email:
-					<input class="w-100 form-control" id="email" name="email" type="mail" placeholder="Ingrese su email">
+					<input class="w-100 form-control" id="email" name="email" type="email" placeholder="Ingrese su email">
 				</label>
 				<label class="col-md-6 col-12 form-label mb-4" for="telefono">Teléfono:
 					<input class="w-100 form-control" id="telefono" name="telefono" type="tel" placeholder="Ingrese su teléfono">
 				</label>
 			</fieldset>
-			<fieldset class="col-12 row p-1 contenedor-form-adopcion">
+			<fieldset class="col-12 row p-1 contenedor-form-adopcion  mx-auto">
 				<legend class="mb-4">Datos Generales Para Adopción</legend>
 				<label class="col-md-6 col-12 form-label mb-4" for="nombre_rescatado">Nombre del rescatado al que postula:
 					<input class="w-100 form-control" id="nombre_rescatado" name="nombre_rescatado" type="text" readonly value="<?php echo get_the_title();?>">

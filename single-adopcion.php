@@ -27,7 +27,7 @@ get_header();
 				<div class="col-lg-6">
 					<figure class="foto-ficha text-center ms-auto"><?php cbh_post_thumbnail();?></figure>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 text-md-start text-center my-md-0 my-3">
 					<h1><?php echo get_the_title();?></h1>
 					<p><i class="fa-solid fa-paw"></i> Edad: <?php the_field('edad');?></p>
 					<p><i class="fa-solid fa-venus-mars"></i> Género: <?php the_field('genero');?></p>
@@ -36,15 +36,6 @@ get_header();
 					<a id="boton_adoptame_ficha" class="boton-adoptame-ficha" href="#contenedor_formulario">Adóptame</a>
 				</div>
 			</div>
-			<!-- <div class="col-lg-5 col-md-12 contenedor-datos-mascota pt-3 border">
-				<h1><?php echo get_the_title();?></h1>
-				<p><i class="fa-solid fa-paw"></i> <?php the_field('edad');?></p>
-				<p><i class="fa-solid fa-venus-mars"></i> <?php the_field('genero');?></p>
-				<p><i class="fa-solid fa-ruler-horizontal"></i> <?php the_field('tamano');?></p>
-				<p><i class="fa-solid fa-heart"></i> <?php the_field('personalidad');?></p>
-				<p class="pb-3"><i class="fa-solid fa-circle-exclamation"></i> <?php the_field('personalidad');?></p>
-				<a id="boton_adoptame_ficha" class="boton-adoptame-ficha" href="#contenedor_formulario">Adóptame</a>
-			</div> -->
 		</section>
 
 		<section class="my-5" style="display:none;" id="contenedor_formulario">
