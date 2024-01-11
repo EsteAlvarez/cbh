@@ -733,8 +733,8 @@ form {
     font-family: 'Rubik', sans-serif;
 }
 .contenedor-form-adopcion {
-    border: 1px solid gray;
-    background-color: #EDEDED;
+    border: 1px solid lightgray;
+    background-color: #F5F5F5;
     border-radius: 3px;
 }
 .foto-ficha {

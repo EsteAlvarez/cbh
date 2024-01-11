@@ -26,7 +26,7 @@ get_header();
 		<!--Banner sobre nosotros-->
 
 		<!--Migas de pan-->
-		<div class="container my-3">
+		<div class="container my-5">
 			<nav aria-label="breadcrumb" class="migas">
 			<ol class="breadcrumb m-0 p-0">
 				<li class="breadcrumb-item"><a class="text-decoration-none link-migas" href="<?php echo home_url();?>">Inicio</a></li>

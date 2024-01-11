@@ -22,7 +22,7 @@ get_header();
 			</nav>
 		</div>
 		<!--Migas de pan-->
-		<section class="my-5 p-3">
+		<section class="my-5">
 			<div class="row">
 				<div class="col-lg-6">
 					<figure class="foto-ficha text-center ms-auto"><?php cbh_post_thumbnail();?></figure>

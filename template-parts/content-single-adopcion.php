@@ -16,7 +16,7 @@
 	</div>
 
 	<form class="container" action="post">
-			<fieldset class="col-12 row p-1 mb-4 contenedor-form-adopcion mx-auto">
+			<fieldset class="col-12 row p-1 mb-5 contenedor-form-adopcion mx-auto">
 				<legend class="mb-4">Datos Personales</legend>
 				<label class="col-md-6 col-12 form-label mb-4" for="nombre">Nombre:
 					<input class="w-100 form-control" id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre">
