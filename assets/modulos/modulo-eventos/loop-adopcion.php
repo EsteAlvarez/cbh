@@ -18,8 +18,8 @@ hoja_estilos_eventos();
             $post_per_page = 3; // -1 shows all posts Cantidad de post a mostrar
             $args = array(
                 'post_type' => 'eventos',
-                'orderby' => 'DSC',
-                'order' => 'ASC',//DSC descendente 
+                'orderby' => 'date', // Ordenar por fecha
+                'order' => 'DESC', // Orden descendente
                 'paged' => $paged,
                 'posts_per_page' => $post_per_page,
                 'tax_query' => array (
@@ -43,6 +43,7 @@ hoja_estilos_eventos();
                     <h2><?php echo get_the_title();?></h2>
                     <h3 class="d-lg-none d-block h4"><?php echo esc_html ( get_field( 'fecha_de_evento' ) ); ?></h3>
                     <p class="extracto-evento-card"><?php the_field('extracto');?></p>
+                    <p><?php the_field('ubicacion');?></p>
                     <span><?php the_field('hora_de_inicio'); ?> - <?php the_field('hora_de_cierre'); ?></span>
                 </div>
             </div>
