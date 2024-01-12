@@ -1,0 +1,32 @@
+.extracto-evento-card {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas deseado */
+    -webkit-box-orient: vertical;
+}
+.fondo-adopcion {
+    background-color: #C9C1E6;
+    border-radius: 3px;
+}
+.fondo-contenido-eventos-card {
+    border: 1px solid #2D2E6F;
+    border-radius: 3px;
+}
+.link-eventos {
+    text-decoration: none;
+    color: #2D2E6F;
+    transition: .5s;
+}
+.link-eventos:visited {
+    color: #2D2E6F;
+}
+.link-eventos:hover {
+    color: #000;
+}
+.fondo-charlas {
+    background-color: #F1D1FF;
+}
+.fondo-esterilizaciones {
+    background-color: #FFE5B8;
+}

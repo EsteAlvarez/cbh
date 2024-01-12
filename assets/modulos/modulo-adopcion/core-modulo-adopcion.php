@@ -3,8 +3,8 @@
 function adopcion_register() {
 
     $labels = array(
-        'name' => _x('Adopcion', 'post type general name'),
-        'singular_name' => _x('Adopcion', 'post type singular name'),
+        'name' => _x('Adopción', 'post type general name'),
+        'singular_name' => _x('Adopción', 'post type singular name'),
         'add_new' => _x('Agregar Callejero', 'slideshow_two item'),
         'add_new_item' => __('Agregar adopcion'),
         'edit_item' => __('Editar adopcion'),
@@ -44,7 +44,7 @@ function adopcion_register() {
             'categoria-adopcion',
             'adopcion',
             array(
-                'label' => __( 'Categorias' ),
+                'label' => __( 'Categorías' ),
                 'rewrite' => array( 'slug' => 'categoria-adopcion' ),
                 'hierarchical' => true, //Herencia categorías y sub categorías
                 // Allow automatic creation of taxonomy columns on associated post-types table?

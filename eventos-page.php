@@ -16,6 +16,35 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<!--Banner sobre nosotros-->
+		<section class="container-fluid banner-causa text-center p-4">
+			<div class="container">
+				<h1><?php echo get_the_title();?></h1>
+				<p><?php the_content();?></p>
+			</div>
+		</section>
+		<!--Banner sobre nosotros-->
+
+		<!--Migas de pan-->
+		<div class="container my-5">
+			<nav aria-label="breadcrumb" class="migas">
+			<ol class="breadcrumb m-0 p-0">
+				<li class="breadcrumb-item"><a class="text-decoration-none link-migas" href="<?php echo home_url();?>">Inicio</a></li>
+				<li class="breadcrumb-item active fw-bold" aria-current="page"><?php echo get_the_title();?></li>
+			</ol>
+			</nav>
+		</div>
+		<!--Migas de pan-->
+
+		<!--Loops de eventos-->
+		<section class="container my-5">
+			<?php include get_template_directory() . '/assets/modulos/modulo-eventos/loop-adopcion.php';?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-eventos/loop-charlas.php';?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-eventos/loop-esterilizaciones.php';?>
+		</section>
+		<!--Loops de eventos-->
+
+
 
 		<?php
 		while ( have_posts() ) :

@@ -4,7 +4,7 @@ function eventos_register() {
 
     $labels = array(
         'name' => _x('Eventos', 'post type general name'),
-        'singular_name' => _x('canciones', 'post type singular name'),
+        'singular_name' => _x('Eventos', 'post type singular name'),
         'add_new' => _x('Agregar eventos', 'slideshow_two item'),
         'add_new_item' => __('Agregar eventos'),
         'edit_item' => __('Editar eventos'),
@@ -28,7 +28,7 @@ function eventos_register() {
         'menu_icon'  => 'dashicons-tickets',
         'hierarchical' => false,
         'menu_position' => null,
-        'supports'=> array( 'title','thumbnail', 'excerpt', 'editor'), //Modificar tipo de contenido de post
+        'supports'=> array( 'title','thumbnail', 'editor'), //Modificar tipo de contenido de post
         'rewrite' => array('slug' => 'eventos', 'with_front' => false)
     ); 
 
@@ -44,7 +44,7 @@ function eventos_register() {
             'categoria-eventos',
             'eventos',
             array(
-                'label' => __( 'Categoria' ),
+                'label' => __( 'Categorías' ),
                 'rewrite' => array( 'slug' => 'categoria-eventos' ),
                 'hierarchical' => true, //Herencia categorías y sub categorías
                 // Allow automatic creation of taxonomy columns on associated post-types table?
