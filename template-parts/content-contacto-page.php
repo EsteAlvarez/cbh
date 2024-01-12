@@ -42,5 +42,8 @@
         </label>
         <!--Mensaje-->
     </fieldset>
+    <div class="text-center my-5">
+		<button class="boton-adoptame-ficha" type="submit">Enviar Formulario</button>
+	</div>
 </form>
 </article><!-- #post-<?php the_ID(); ?> -->

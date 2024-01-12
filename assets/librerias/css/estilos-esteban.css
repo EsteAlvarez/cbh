@@ -662,6 +662,7 @@ h1, h2, h3, h4, h5, h6, legend, label {
 /*Banner nuestra causa*/
 .banner-causa {
     background-color: rgba(201, 193, 230, .7);
+    min-height: 30vh;
 }
 .contenedor-contador {
     border: 10px solid var(--color-blanco);
@@ -733,7 +734,6 @@ form {
     font-family: 'Rubik', sans-serif;
 }
 .contenedor-form-adopcion {
-    background-color: var(--color-cuadricula-eventos);
     border-radius: 3px;
 }
 .foto-ficha {
