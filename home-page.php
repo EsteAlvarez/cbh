@@ -154,9 +154,9 @@ get_header();
 						<?php endif; ?>
 					</a>
 				</div>
-				<div class="col-12 col-md-7 p-md-5 p-2 d-flex flex-column justify-content-center align-items-center text-center">
+				<div class="col-6 col-md-7 p-md-5 p-md-2 p-0 d-flex flex-column justify-content-center align-items-center text-md-center text-start">
 					<h2 class="h3 mb-md-4 mb-1"><?php the_field('titulo_banner_ripley');?></h2>
-					<p class="fondo-texto-ripley p-2"><?php the_field('texto_banner_ripley');?></p>
+					<p class="fondo-texto-ripley p-2 d-md-block d-none"><?php the_field('texto_banner_ripley');?></p>
 				</div>
 			</div>
 		</section>
