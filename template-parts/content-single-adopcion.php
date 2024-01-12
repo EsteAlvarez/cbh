@@ -64,7 +64,7 @@
 				<label class="col-md-6 col-12 form-label mb-4" for="numero_personas">¿Cuántas personas viven en el hogar?, ¿qué edades tienen?
 					<textarea class="form-control" name="numero_personas" id="numero_personas" cols="30" rows="4" placeholder="Escriba aquí su respuesta"></textarea>
 				</label>
-				<label class="col-md-6 col-12 form-label mb-4" for="familia_acuerdo">¿Actualmente tiene mascotas?
+				<label class="col-md-6 col-12 form-label mb-4" for="mascotas">¿Actualmente tiene mascotas?
 					<select class="form-select" name="mascotas" id="mascotas">
 						<option selected>Eliga una opción</option>
 						<option value="si">Si</option>
@@ -93,6 +93,9 @@
 						<option value="no">No</option>
 					</select>
 				</label>
+				<div class="text-center p-4">
+					<button class="boton-adoptame-ficha" type="submit">Enviar Formulario</button>
+				</div>
 			</fieldset>
 		</div>
 </article><!-- #post-<?php the_ID(); ?> -->

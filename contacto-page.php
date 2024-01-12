@@ -37,7 +37,7 @@ get_header();
 		<!--Migas de pan-->
 
 		<!--Formulario de contacto-->
-		<section class="container my-md-5 my-3 p-lg-5 p-md-4 p-3">
+		<section class="container mb-5">
 			<?php
 				while ( have_posts() ) :
 					the_post();
