@@ -17,7 +17,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<!--Contador de adopciones-->
-		<section class="container-fluid banner-causa">
+		<section class="container-fluid banner-causa d-flex justify-content-center align-items-center">
 			<?php
 			function contar_entradas() {
 				$contar_custom_posts = wp_count_posts('adopcion')->publish;

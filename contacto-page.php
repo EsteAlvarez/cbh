@@ -17,7 +17,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<!--Banner sobre nosotros-->
-		<section class="container-fluid banner-causa text-center p-4">
+		<section class="container-fluid banner-causa text-center p-4 d-flex justify-content-center align-items-center">
 			<div class="container">
 				<h1><?php echo get_the_title();?></h1>
 				<p><?php the_content();?></p>
