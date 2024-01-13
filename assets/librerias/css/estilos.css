@@ -11,8 +11,8 @@
     --color-borde-cuadricula-contacto: #F1D1FF;
     --color-texto-cuadriculas: #2D2E6F;
     --color-banner-ripley: #C9C1E6;
-    --color-blanco: #fff;
-    --color-negro: #000;
+    --blanco: #fff;
+    --negro: #333333;
 }
 
 /*Fuentes*/
@@ -39,7 +39,7 @@ header nav li .nav-link {
 }
 header nav li .nav-link:hover {
     border-bottom: 1px solid var(--color-texto-cuadriculas);
-    color: var(--color-texto-cuadriculas);
+    color: var(--negro);
 }
 /*Header*/
 
@@ -96,7 +96,7 @@ header nav li .nav-link:hover {
     color: var(--color-texto-cuadriculas);
 }
 .carrusel-redes:hover {
-    color: var(--color-negro);
+    color: var(--negro);
 }
 .carrusel-elemento-slick {
     min-height: 40vh;
@@ -125,8 +125,8 @@ header nav li .nav-link:hover {
     color: var(--color-texto-cuadriculas);
 }
 .container_grid a:hover {
-    color: #5d5fdb !important;
-    box-shadow: 0 0 4px 4px  #C9C1E6;
+    color: var(--negro) !important;
+    box-shadow: 0 0 4px 4px  var(--negro);
 }
 .area_centro { 
     grid-area: area_centro;
@@ -270,7 +270,7 @@ header nav li .nav-link:hover {
     background-color: var(--color-banner-ripley);
 }
 .fondo-texto-ripley {
-    background-color: var(--color-blanco);
+    background-color: var(--blanco);
     border-radius: 5px;
 }
 .imagen-ripley {
@@ -279,7 +279,7 @@ header nav li .nav-link:hover {
 }
 .imagen-ripley:hover {
     width: 300px;
-    box-shadow: 0 0 4px 4px #C9C1E6;
+    box-shadow: 0 0 4px 4px #C9C1E6; /*Corregir*/
 }
 /*Banner Ripley*/
 
@@ -299,8 +299,8 @@ header nav li .nav-link:hover {
     color: var(--color-texto-cuadriculas);
 }
 .cards-rrss a:hover .card-hover {
-    color: #5d5fdb !important;
-    box-shadow: 0 0 4px 4px  #C9C1E6;
+    color: var(--negro) !important;
+    box-shadow: 0 0 4px 4px  var(--negro);
 }
 .titulo-card-rrss {
     text-transform: uppercase;
@@ -315,7 +315,7 @@ header nav li .nav-link:hover {
     border: 10px solid var(--color-borde-cuadricula-donacion);
 }
 .contenedor-icono-rrss {
-    background-color: var(--color-blanco);
+    background-color: var(--blanco);
     width: 60px;
     height: 60px;
     margin: 0% auto;
@@ -332,45 +332,170 @@ header nav li .nav-link:hover {
 }
 /*Banner Vitalcan*/
 
+/*Adóptanos*/
+/*Banner nuestra causa*/
+.banner-causa {
+    background-color: rgba(201, 193, 230, .7);
+    min-height: 30vh;
+}
+.contenedor-contador {
+    border: 10px solid var(--blanco);
+    border-radius: 3px;
+}
+/*Banner nuestra causa*/
+.migas ol li {
+    color: var(--color-texto-cuadriculas) !important;
+}
+.link-migas {
+    transition: .5s;
+    color: var(--color-texto-cuadriculas);
+}
+.link-migas:visited {
+    color: var(--color-texto-cuadriculas);
+}
+.link-migas:hover {
+    color: var(--negro);
+}
+.boton-filtro-mascotas {
+    width: 200px;
+    border-radius: 3px;
+    color: var(--blanco);
+    font-weight: bold;
+    background-color: var(--color-texto-cuadriculas);
+    transition: .5s;
+}
+.boton-filtro-mascotas:hover {
+    background-color: var(--negro);
+}
+.img-ayd {
+    width: 250px;
+}
+/*Adóptanos*/
 
+/*Ficha de mascota*/
+.ficha-adopcion {
+    border: 10px solid var(--color-texto-cuadriculas);
+    border-radius: 3px;
+}
+.contenedor-imagen-ficha {
+   background-color: var(--color-banner-ripley);
+}
+.contenedor-imagen-ficha img {
+    width: 400px;
+    height: auto;
+}
+.contenedor-datos-mascota {
+    background-color: var(--color-banner-ripley);
+}
+.boton-adoptame-ficha {
+    background-color: var(--color-texto-cuadriculas);
+    color: var(--blanco);
+    border-radius: 3px;
+    padding: .5em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+.boton-adoptame-ficha:visited {
+    background-color: var(--color-texto-cuadriculas);
+    color: var(--blanco);
+}
+.boton-adoptame-ficha:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+form {
+    font-family: 'Rubik', sans-serif;
+}
+.contenedor-form-adopcion {
+    border-radius: 3px;
+}
+.foto-ficha {
+    width: 400px;
+    height: auto;
+}
+/*Ficha de mascota*/
 
+/*Sobre nosotros*/
+.mision {
+    border: 10px solid var(--color-borde-cuadricula-contacto);
+    background-color: var(--color-cuadricula-contacto);
+}
+.vision {
+    border: 10px solid var(--color-borde-cuadricula-adopta);
+    background-color: var(--color-cuadricula-adopta);
+}
+.adopta-sobre-nosotros {
+    border: 10px solid var(--color-borde-cuadricula-socio);
+    background-color: var(--color-cuadricula-socio);
+}
+.voluntario-sobre-nosotros {
+    border: 10px solid var(--color-borde-cuadricula-donacion);
+    background-color: var(--color-cuadricula-donacion);
+}
+.donacion-sobre-nosotros {
+    border: 10px solid var(--color-borde-cuadricula-adopta);
+    background-color: var(--color-cuadricula-adopta);
+}
+.imagen-como-ayudar {
+    object-fit: contain;
+}
+.boton-donacion-sn {
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--color-texto-cuadriculas);
+    border: 1px solid var(--color-texto-cuadriculas);
+    border-radius: 3px;
+    padding: .1em .5em;
+    font-weight: 600;
+    transition: .5s;
+    width: 50%;
+    margin: 0%;
+}
+.boton-donacion-sn:visited {
+    color: var(--blanco);
+    background-color: var(--color-texto-cuadriculas);
+    border: 1px solid var(--color-texto-cuadriculas);
+ 
+}
+.boton-donacion-sn:hover {
+    color: var(--blanco);
+    background-color: var(--negro);
+    border: 1px solid var(--negro);
 
+}
+/*Sobre nosotros*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Footer*/
+footer {
+    background-color: rgba(201, 193, 230, 0.5);
+}
+footer .aqui {
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}
+footer .aqui:visited {
+    color: var(--color-texto-cuadriculas);
+}
+footer .logo-footer img {
+    width: 200px;
+}
+footer i {
+    color: var(--color-texto-cuadriculas);
+    transition: color 0.5s ease-in-out;
+}
+footer i:hover {
+    color: var(--negro);
+}
+footer a {
+    text-decoration: none;
+    color: var(--color-texto-cuadriculas);
+}
+footer a:hover {
+    color: var(--);
+}
+/*Footer*/
 
 
 
@@ -690,168 +815,3 @@ header nav li .nav-link:hover {
         height: 100%;
       }
 }
-
-
-/*Adóptanos*/
-/*Banner nuestra causa*/
-.banner-causa {
-    background-color: rgba(201, 193, 230, .7);
-    min-height: 30vh;
-}
-.contenedor-contador {
-    border: 10px solid var(--color-blanco);
-    border-radius: 3px;
-}
-/*Banner nuestra causa*/
-.migas ol li {
-    color: var(--color-texto-cuadriculas) !important;
-}
-.link-migas {
-    transition: .5s;
-    color: var(--color-texto-cuadriculas);
-}
-.link-migas:visited {
-    color: var(--color-texto-cuadriculas);
-}
-.link-migas:hover {
-    color: black;
-}
-.boton-filtro-mascotas {
-    width: 200px;
-    border-radius: 3px;
-    color: var(--color-blanco);
-    font-weight: bold;
-    background-color: var(--color-texto-cuadriculas);
-    transition: .5s;
-}
-.boton-filtro-mascotas:hover {
-    background-color: black;
-}
-.img-ayd {
-    width: 250px;
-}
-/*Adóptanos*/
-
-/*Ficha de mascota*/
-.ficha-adopcion {
-    border: 10px solid var(--color-texto-cuadriculas);
-    border-radius: 3px;
-}
-.contenedor-imagen-ficha {
-   background-color: var(--color-banner-ripley);
-}
-.contenedor-imagen-ficha img {
-    width: 400px;
-    height: auto;
-}
-.contenedor-datos-mascota {
-    background-color: var(--color-banner-ripley);
-}
-.boton-adoptame-ficha {
-    background-color: var(--color-texto-cuadriculas);
-    color: var(--color-blanco);
-    border-radius: 3px;
-    padding: .5em;
-    text-decoration: none;
-    font-weight: bold;
-    transition: .5s;
-}
-.boton-adoptame-ficha:visited {
-    background-color: var(--color-texto-cuadriculas);
-    color: var(--color-blanco);
-}
-.boton-adoptame-ficha:hover {
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
-}
-form {
-    font-family: 'Rubik', sans-serif;
-}
-.contenedor-form-adopcion {
-    border-radius: 3px;
-}
-.foto-ficha {
-    width: 400px;
-    height: auto;
-}
-/*Ficha de mascota*/
-
-/*Sobre nosotros*/
-.mision {
-    border: 10px solid var(--color-borde-cuadricula-contacto);
-    background-color: var(--color-cuadricula-contacto);
-}
-.vision {
-    border: 10px solid var(--color-borde-cuadricula-adopta);
-    background-color: var(--color-cuadricula-adopta);
-}
-.adopta-sobre-nosotros {
-    border: 10px solid var(--color-borde-cuadricula-socio);
-    background-color: var(--color-cuadricula-socio);
-}
-.voluntario-sobre-nosotros {
-    border: 10px solid var(--color-borde-cuadricula-donacion);
-    background-color: var(--color-cuadricula-donacion);
-}
-.donacion-sobre-nosotros {
-    border: 10px solid var(--color-borde-cuadricula-adopta);
-    background-color: var(--color-cuadricula-adopta);
-}
-.imagen-como-ayudar {
-    object-fit: contain;
-}
-.boton-donacion-sn {
-    text-decoration: none;
-    color: var(--color-blanco);
-    background-color: var(--color-texto-cuadriculas);
-    border: 1px solid var(--color-texto-cuadriculas);
-    border-radius: 3px;
-    padding: .1em .5em;
-    font-weight: 600;
-    transition: .5s;
-    width: 50%;
-    margin: 0%;
-}
-.boton-donacion-sn:visited {
-    color: var(--color-blanco);
-    background-color: var(--color-texto-cuadriculas);
-    border: 1px solid var(--color-texto-cuadriculas);
- 
-}
-.boton-donacion-sn:hover {
-    color: var(--color-blanco);
-    background-color: var(--color-negro);
-    border: 1px solid var(--color-negro);
-
-}
-/*Sobre nosotros*/
-
-/*Footer*/
-footer {
-    background-color: rgba(201, 193, 230, 0.5);
-  }
-  footer .aqui {
-    font-weight: bold;
-    text-decoration: none;
-  }
-  footer .aqui:visited {
-    color: #2D2E6F;
-  }
-  footer .logo-footer img {
-    width: 200px;
-  }
-  footer i {
-    color: #2D2E6F;
-    transition: color 0.3s ease-in-out;
-  }
-  footer i:hover {
-    color: #5d5fdb;
-  }
-  footer a {
-    text-decoration: none;
-    color: #2D2E6F;
-  }
-  footer a:hover {
-    color: #5d5fdb;
-  }
-/*Footer*/
