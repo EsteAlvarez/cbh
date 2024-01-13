@@ -28,7 +28,7 @@ get_header();
 						<?php endif; ?>
 					</figure>
 					<div class="d-flex justify-content-center align-items-md-start align-items-center text-md-start text-center col-lg-5 col-12 flex-column">
-						<h1><?php the_field('titulo_primer_item');?></h1>
+						<h1 class="fw-bold"><?php the_field('titulo_primer_item');?></h1>
 						<p class="px-md-0 px-5"><?php the_field('descripcion_primer_item');?></p>
 					</div>
 				</a>
@@ -43,7 +43,7 @@ get_header();
 						<?php endif; ?>
 					</figure>
 					<div class="d-flex justify-content-center align-items-md-start align-items-center col-lg-5 col-12 flex-column">
-						<h2 class="h1"><?php the_field('titulo_segundo_item');?></h2>
+						<h2 class="h1 fw-bold"><?php the_field('titulo_segundo_item');?></h2>
 						<p class="px-md-0 px-5"><?php the_field('descripcion_segundo_item');?></p>
 						<div>
 							<i class="bi bi-facebook fs-2"></i>
@@ -63,7 +63,7 @@ get_header();
 						<?php endif; ?>
 					</figure>
 					<div class="d-flex justify-content-center align-items-md-start align-items-center text-md-start text-center col-lg-5 col-12 flex-column">
-						<h2 class="h1"><?php the_field('titulo_tercer_item');?></h2>
+						<h2 class="h1 fw-bold"><?php the_field('titulo_tercer_item');?></h2>
 						<p class="px-md-0 px-5"><?php the_field('descripcion_tercer_item');?></p>
 					</div>
 				</a>
@@ -107,7 +107,7 @@ get_header();
 			</a>
 
 			<a href="<?php the_field('link_socios');?>" target="_blank" class="area_derecha_inferior">
-				<h2 class="h3"><?php the_field('socio');?></h2>
+				<h2 class="h3 pt-md-4 pt-2"><?php the_field('socio');?></h2>
 				<p><?php the_field('texto_socio');?></p>
 				<?php 
 				$image = get_field('imagen_socios');
@@ -117,7 +117,7 @@ get_header();
 			</a>
 
 			<a href="contacto" class="area_izquierda_inferior">
-				<h2 class="h3"><?php the_field('contacto');?></h2>
+				<h2 class="h3 pt-md-4 pt-2"><?php the_field('contacto');?></h2>
 				<div>
 					<?php 
 					$image = get_field('imagen_contacto');

@@ -27,6 +27,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6, legend, label {
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 /*Fuentes*/
 
@@ -147,7 +148,6 @@ header nav li .nav-link:hover {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .area_centro p{
     font-size: 15px;
@@ -172,7 +172,6 @@ header nav li .nav-link:hover {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .area_izquierda p{
     font-size: 15px;
@@ -198,7 +197,6 @@ header nav li .nav-link:hover {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .area_derecha p{
     font-size: 15px;
@@ -229,7 +227,6 @@ header nav li .nav-link:hover {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .area_derecha_inferior p{
     font-size: 15px;
@@ -256,7 +253,6 @@ header nav li .nav-link:hover {
     width: 100% !important;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .area_izquierda_inferior p{
     font-size: 15px;
