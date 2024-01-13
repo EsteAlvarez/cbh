@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer class="container-fluid py-2">
+	<footer class="container-fluid py-4">
 		<div class="row text-center">
 			<div class="col-12">
 				<span class="logo-footer zoom"><?php the_custom_logo(); ?></span>
