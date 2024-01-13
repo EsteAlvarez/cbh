@@ -26,10 +26,10 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cbh' ); ?></a>
 	
 	<!--Preload-->
-	<div id="preload_fcbh" class="preload"><?php the_custom_logo(); ?></div>
+	<div id="preload_fcbh" class="preload text-center"><?php the_custom_logo(); ?></div>
 	<!--Preload-->
 
-<header id="masthead" class="container-fluid px-lg-5 bg-white">
+<header id="masthead" class="container-fluid bg-white">
 	<nav class="navbar navbar-expand-lg bg-transparent">
 		<div class="container-fluid">
 		<span class="navbar-brand zoom m-0 p-0"><?php the_custom_logo(); ?></span>
@@ -37,27 +37,27 @@
 			<i class="fa-solid fa-dog"></i> / <i class="fa-solid fa-cat"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
-				<li class="nav-item">
-					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('inicio'))); ?>">Inicio</a>
+			<ul class="navbar-nav ms-auto text-lg-start text-center">
+				<li class="nav-item pe-2 mb-lg-0 mb-2">
+					<a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path('inicio'))); ?>">Inicio</a>
+				</li>
+				<li class="nav-item pe-2 mb-lg-0 mb-2">
+					<a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path('sobre-nosotros'))); ?>">Sobre Nosotros</a>
+				</li>
+				<li class="nav-item pe-2 mb-lg-0 mb-2">
+					<a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path('adoptanos'))); ?>">Adóptanos</a>
+				</li>
+				<li class="nav-item pe-2 mb-lg-0 mb-2">
+					<a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path('proximos-eventos'))); ?>">Próximos Eventos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('sobre-nosotros'))); ?>">Sobre Nosotros</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('adoptanos'))); ?>">Adóptanos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('proximos-eventos'))); ?>">Próximos Eventos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link zoom" href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>">Contacto</a>
+					<a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>">Contacto</a>
 				</li>
 			</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="modal fade modal-info" id="inicio" tabindex="-1" aria-labelledby="inicioModalLabel" aria-hidden="true">
+	<!-- <div class="modal fade modal-info" id="inicio" tabindex="-1" aria-labelledby="inicioModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollabl modal-lg">
 				<div class="modal-content">
 					<div class="modal-body p-5 d-flex justify-content-center">
@@ -75,5 +75,5 @@
 					</div>
 				</div>
 			</div>
-	</div>
+	</div> -->
 </header>
