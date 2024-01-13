@@ -20,12 +20,46 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
+    color: var(--color-texto-cuadriculas);
 }
+p {
+    font-family: 'Rubik', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, legend, label {
+    font-family: 'Poppins', sans-serif;
+}
+/*Fuentes*/
+
+/*Header*/
+header .custom-logo-link {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+header nav li {
+    padding-right: 20px;
+}
+header nav li .nav-link {
+    color: #2D2E6F;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+header nav li .nav-link:hover {
+    border-bottom: 1px solid #2D2E6F;
+    color: #2D2E6F;
+}
+.navbar-brand {
+    width: auto;
+}
+/*Header*/
+
+/*Preload*/
 .overflow-preload {
     overflow: hidden;
 }
-.overflow-preload img {
+.preload img {
     animation: crecerReducir 1s infinite;
+    width: 75%;
 }
 @keyframes crecerReducir {
     0%, 100% {
@@ -36,19 +70,13 @@ body {
     }
 }
 .preload {
-    min-width: 100vh;
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-p {
-    font-family: 'Rubik', sans-serif;
-}
-h1, h2, h3, h4, h5, h6, legend, label {
-    font-family: 'Poppins', sans-serif;
-}
-/*Fuentes*/
+/*Preload*/
 
 /*Logo*/
 .zoom img {
@@ -812,3 +840,33 @@ form {
 
 }
 /*Sobre nosotros*/
+
+/*Footer*/
+footer {
+    background-color: rgba(201, 193, 230, 0.5);
+  }
+  footer .aqui {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  footer .aqui:visited {
+    color: #2D2E6F;
+  }
+  footer .logo-footer img {
+    width: 200px;
+  }
+  footer i {
+    color: #2D2E6F;
+    transition: color 0.3s ease-in-out;
+  }
+  footer i:hover {
+    color: #5d5fdb;
+  }
+  footer a {
+    text-decoration: none;
+    color: #2D2E6F;
+  }
+  footer a:hover {
+    color: #5d5fdb;
+  }
+/*Footer*/

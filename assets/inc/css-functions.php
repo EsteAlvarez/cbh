@@ -6,8 +6,7 @@ function css_fcbh(){
     wp_register_style('fuentes', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Rubik:wght@300;400&display=swap', 'all');
     wp_register_style('slick-css', get_template_directory_uri() . '/assets/librerias/css/slick.css', 'all');
     wp_register_style('slick-theme', get_template_directory_uri() . '/assets/librerias/css/slick-theme.css', 'all');
-    wp_register_style('estilos-esteban', get_template_directory_uri() . '/assets/librerias/css/estilos-esteban.css', 'all');
-    wp_register_style('estilos-sebastian', get_template_directory_uri() . '/assets/librerias/css/estilos-sebastian.css', 'all');
+    wp_register_style('estilos', get_template_directory_uri() . '/assets/librerias/css/estilos.css', 'all');
         
     
     
@@ -17,8 +16,7 @@ function css_fcbh(){
     wp_enqueue_style('fuente');
     wp_enqueue_style('slick-css');
     wp_enqueue_style('slick-theme');
-    wp_enqueue_style('estilos-esteban');
-    wp_enqueue_style('estilos-sebastian');
+    wp_enqueue_style('estilos');
 }
 
 add_action('wp_enqueue_scripts', 'css_fcbh');

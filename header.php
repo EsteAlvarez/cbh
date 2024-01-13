@@ -24,13 +24,17 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cbh' ); ?></a>
-<div id="preload_fcbh" class="preload h-100 w-100"><?php the_custom_logo(); ?></div>
+	
+	<!--Preload-->
+	<div id="preload_fcbh" class="preload"><?php the_custom_logo(); ?></div>
+	<!--Preload-->
+
 <header id="masthead" class="container-fluid px-lg-5 bg-white">
 	<nav class="navbar navbar-expand-lg bg-transparent">
 		<div class="container-fluid">
-		<figure class="navbar-brand zoom m-0 p-0"><?php the_custom_logo(); ?></figure>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="fa-solid fa-dog"></i> / <i class="fa-solid fa-cat"></i>
+		<span class="navbar-brand zoom m-0 p-0"><?php the_custom_logo(); ?></span>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa-solid fa-dog"></i> / <i class="fa-solid fa-cat"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
