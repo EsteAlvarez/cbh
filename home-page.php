@@ -16,37 +16,35 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<!--Carrusel adóptanos-->
-		<section class="container-fluid p-0">
-			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item carousel-uno active">
-						<a href="<?php the_field('link_primer_item');?>" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
-							<figure class="m-0 p-0 text-end col-6 p-4 pb-0 d-lg-block d-none">
+		<!--Carrusel adóptanos slick-->
+		<section id="carrusel_adoptanos">
+			<article class="carrusel-uno carrusel-elemento-slick p-0 m-0">
+			<a href="<?php the_field('link_primer_item');?>" class="d-flex text-decoration-none carrusel-redes carrusel-elemento-slick">
+							<figure class="m-0 p-0 col-6 p-4 pb-0 d-lg-block d-none">
 								<?php 
 								$image = get_field('imagen_primer_item');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="ms-auto img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-5 flex-column">
+							<div class="d-flex justify-content-center align-items-md-start align-items-center text-md-start text-center col-lg-6 col-12 pe-lg-5 pe-0 flex-column">
 								<h1><?php the_field('titulo_primer_item');?></h1>
-								<p><?php the_field('descripcion_primer_item');?></p>
+								<p class="px-md-0 px-5"><?php the_field('descripcion_primer_item');?></p>
 							</div>
 						</a>
-					</div>
-					<div class="carousel-item carousel-dos">
-						<a href="#redes_sociales" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
-							<figure class="d-lg-block d-none d-none m-0 p-0 col-6 text-end p-4 pb-0">
+			</article>
+			<article class="carrusel-dos carrusel-elemento-slick p-0 m-0">
+			<a href="#redes_sociales" class="d-flex text-decoration-none carrusel-redes carrusel-elemento-slick">
+							<figure class="d-lg-block d-none m-0 p-0 col-6  p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_segundo_item');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="ms-auto img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-5 flex-column">
+							<div class="d-flex justify-content-center align-items-md-start align-items-center col-lg-6 col-12 pe-lg-5 pe-0 flex-column">
 								<h2 class="h1"><?php the_field('titulo_segundo_item');?></h2>
-								<p><?php the_field('descripcion_segundo_item');?></p>
+								<p class="px-md-0 px-5"><?php the_field('descripcion_segundo_item');?></p>
 								<div>
 									<i class="bi bi-facebook fs-2"></i>
 									<i class="bi bi-instagram fs-2 px-2"></i>
@@ -54,34 +52,24 @@ get_header();
 								</div>
 							</div>
 						</a>
-					</div>
-					<div class="carousel-item carousel-tres">
-						<a href="<?php the_field('link_tercer_item');?>" class="d-flex w-75 mx-auto text-decoration-none carusel-redes">
+			</article>
+			<article class="carrusel-tres carrusel-elemento-slick p-0 m-0">
+			<a href="<?php the_field('link_tercer_item');?>" class="d-flex text-decoration-none carrusel-redes carrusel-elemento-slick">
 							<figure class="d-lg-block d-none d-none m-0 p-0 col-6 text-end p-4 pb-0">
 								<?php 
 								$image = get_field('imagen_tercer_item');
 								if( !empty( $image ) ): ?>
-									<img class="img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="ms-auto img-fluid imagen-carrusel" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 							</figure>
-							<div class="d-flex justify-content-center col-lg-6 col-12 p-lg-3 p-5 flex-column">
+							<div class="d-flex justify-content-center align-items-md-start align-items-center text-md-start text-center col-lg-6 col-12 pe-lg-5 pe-0 flex-column">
 								<h2 class="h1"><?php the_field('titulo_tercer_item');?></h2>
-								<p><?php the_field('descripcion_tercer_item');?></p>
+								<p class="px-md-0 px-5"><?php the_field('descripcion_tercer_item');?></p>
 							</div>
 						</a>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
+			</article>
 		</section>
-		<!--Carrusel adóptanos-->
+		<!--Carrusel adóptanos slick-->
 
 		<!--Sección de cuadricula-->
 		<section class="container_grid my-5">

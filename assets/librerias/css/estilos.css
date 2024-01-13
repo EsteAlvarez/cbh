@@ -74,31 +74,31 @@ header nav li .nav-link:hover {
 /*Logo*/
 
 /*Carousel inicio*/
-.carousel-uno{
+.carrusel-uno {
     background-color: var(--color-banner-ripley);
 }
-.carousel-dos{
+.carrusel-dos {
     background-color: var(--color-borde-cuadricula-socio);
 }
-.carousel-tres{
+.carrusel-tres {
     background-color: var(--color-borde-cuadricula-eventos);
 }
 .imagen-carrusel {
     height: 300px;
     width: 300px;
 }
-.carusel-redes {
+.carrusel-redes {
     color: var(--color-texto-cuadriculas);
     transition: .5s;
 }
-.carusel-redes:visited {
+.carrusel-redes:visited {
     color: var(--color-texto-cuadriculas);
 }
-.carusel-redes:hover {
+.carrusel-redes:hover {
     color: var(--color-negro);
 }
-.carousel-item {
-    min-height: 44vh;
+.carrusel-elemento-slick {
+    min-height: 40vh;
 }
 /*Carousel inicio*/
 
