@@ -20,11 +20,11 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('m-0'); ?>>
+<body <?php body_class('m-0 overflow-preload'); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cbh' ); ?></a>
-
+<div id="preload_fcbh" class="preload h-100 w-100"><?php the_custom_logo(); ?></div>
 <header id="masthead" class="container-fluid px-lg-5 bg-white">
 	<nav class="navbar navbar-expand-lg bg-transparent">
 		<div class="container-fluid">

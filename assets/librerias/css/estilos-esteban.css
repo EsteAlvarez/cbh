@@ -21,6 +21,27 @@ body {
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
 }
+.overflow-preload {
+    overflow: hidden;
+}
+.overflow-preload img {
+    animation: crecerReducir 1s infinite;
+}
+@keyframes crecerReducir {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.preload {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 p {
     font-family: 'Rubik', sans-serif;
 }
